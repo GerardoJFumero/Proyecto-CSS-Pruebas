@@ -4,3 +4,6 @@
 MySQL/
 # Ignora todos los archivos del directorio app/vendor
 app/vendor/
+# Ignora los archivos creados por composer PHP unit
+composer.json
+composer.lock

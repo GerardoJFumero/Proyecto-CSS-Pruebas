@@ -35,3 +35,11 @@ use gestion_citas;
 ```bash
 \q
 ```
+-------------------------------------------------
+* Luego abren el proyecto en el contenedor (Attach to a running container.)
+* Dentro del contenedor ponen "open folder"
+* Escriben la ruta var/www/html (pueden buscarla dentro del explorador)
+* Instalación del composer php unit:
+```bash
+composer require --dev phpunit/phpunit
+```
