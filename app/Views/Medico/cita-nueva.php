@@ -1,10 +1,3 @@
-
-<?php session_start()?>
-
-<head>
-    <title>Solicitar Cita Nueva</title>
-</head>
-
     <!-- //Navbar de opciones de paciente-->
     <?php require_once ('navbar-medico.php') ?>
 

@@ -1,8 +1,3 @@
-
-<head>
-    <title>Solicitar Cita Nueva</title>
-</head>
-
     <!-- //Navbar de opciones de paciente-->
     <?php require_once ('Views/Layouts/navbar-paciente.php') ?>
 
