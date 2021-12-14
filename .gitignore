@@ -1,3 +1,4 @@
+# Ignora los archivos .DS_Store creados por MacOS.
 .DS_Store
 
 app/vendor/s
