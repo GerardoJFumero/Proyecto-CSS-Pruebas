@@ -37,13 +37,12 @@ class PacienteController
             $fechanac=$_POST['fechanac'];
             $tipo_sangre=$_POST['tipo_sangre'];
             $direccion=$_POST['direccion'];  
-        
         //Variables para la protección contra errores
         /**$nombre_error ="";**/
         //Para cada variable, debe verificar que el campo no esté vacío y cumpla las reglas establecidas.
         /**if(empty(trim($_POST['nombres']))){
             $nombre_error = "El campo nombre no puede estar vacío."; 
-        }    elseif(!preg_match('/^[a-zA-Z]+$/', trim($_POST["nombres"]))){
+        }    elseif(!preg_match('/^8-[a-zA-Z]+$/', trim($_POST["nombres"]))){
             $nombre_error = "El nombre solo admite letras.";
         } else{
             $nombres = trim($_POST["nombres"]);

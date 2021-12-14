@@ -29,21 +29,39 @@ class MedicoController
     {   
         $cedula=$_POST['cedula'];
         $contraseña=$_POST['contraseña'];
-        if(!empty($cedula) && !empty($contraseña)){ //De ahora en adelante toda función similar verificará que los campos no estén vacíos
-            $medico= new MedicoModel();
-            $existe_usuario = $medico->verificarlogin($cedula, $contraseña);
 
-            if($existe_usuario){
-                $this->index();
+        if(!empty($cedula)){
+            if(!empty($contraseña)){
+                $medico = new MedicoModel();
+                $existe_usuario = $medico->verificarUser($cedula); 
+
+                    switch($existe_usuario){
+
+                        case true;
+                        $medico = new MedicoModel();
+                        $verificador = $medico->verificarlogin($cedula,$contraseña);
+
+                            if($verificador==true){
+                                $this->index();
+                            } else{
+                                echo "Contraseña Incorrecta";
+                            }
+                        break;
+
+                        case false:
+                        echo "Usuario no Existe";
+                        break;
+                    }     
             } else{
-                require_once ("Views/Medico/failed-login.php");
+                echo "El campo contraseña no puede estar vacío";
             }
-        }else{
-            echo "No puede";
+        } else{
+            echo "El campo cédula no puede estar vacío";
         }
     }
 
     public function index(){
+        echo "Inicia Sesión";
         require_once ("Views/Medico/medico-index.php");
     }
 
