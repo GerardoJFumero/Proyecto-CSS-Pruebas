@@ -1,4 +1,6 @@
 # Ignora los archivos .DS_Store creados por MacOS.
 .DS_Store
-
-app/vendor/s
+# Ignora todos los archivos del directorio MySQL/
+MySQL/
+# Ignora todos los archivos del directorio app/vendor
+app/vendor/
