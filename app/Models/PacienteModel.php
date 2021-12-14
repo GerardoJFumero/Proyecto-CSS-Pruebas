@@ -28,7 +28,7 @@ class PacienteModel
     public function registrarPaciente($nombres, $apellidos, $cedula, $fechanac, $tipo_sangre, $direccion)
     {
         //Punteros que permiten verificar la existencia de información en la BDD
-        $consulta = $this->db->query("INSERT INTO paciente (nombres, apellidos, cedula, fechanac, tipo_sangre, direccion)
+        $consulta = $this->db->query("INSERT INTO paciente (nombre, apellido, cedula, fechanac, tipo_sangre, direccion)
             VALUES ('" . $nombres . "','" . $apellidos . "','" .$cedula . "','" . $fechanac . "','" . $tipo_sangre . "','" . $direccion . "');");
         if ($consulta) {
             return true;

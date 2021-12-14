@@ -16,7 +16,7 @@ class MedicoModel
     public function verificarlogin($cedula, $contraseña)
     {
         //Punteros que permiten verificar la existencia de información en la BDD
-        $consulta = $this->db->query("SELECT count(*) as contador from usuario where cedula_medico = '" . $cedula . "' AND contrasea = '" . $contraseña . "';"  );
+        $consulta = $this->db->query("SELECT count(*) as contador from usuario where cedula_medico = '" . $cedula . "' AND password = '" . $contraseña . "';"  );
         $existe = $consulta->fetch_assoc();
         if ($existe['contador'] > 0) {
             return true;

@@ -1,6 +1,4 @@
 
-<?php session_start()?>
-
 <head>
     <title>Solicitar Cita Nueva</title>
 </head>
