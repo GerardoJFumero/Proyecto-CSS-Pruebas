@@ -311,8 +311,8 @@
 
                 <!-- Login Form -->
                 <form action="?controller=Medico&&action=verificar" method="POST">
-                    <input type="text" id="login" class="fadeIn second" name="cedula" placeholder="cedula" required>
-                    <input type="password" id="password" class="fadeIn third" name="contraseña" placeholder="contraseña" required>
+                    <input type="text" id="login" class="fadeIn second" name="cedula" placeholder="cedula">
+                    <input type="password" id="password" class="fadeIn third" name="contraseña" placeholder="contraseña">
                     <br><br>
                     <button type="submit" class="btn" value="Iniciar" style="background-color: #0053a3; color: white;">Iniciar sesión</button>
                     <br><br>

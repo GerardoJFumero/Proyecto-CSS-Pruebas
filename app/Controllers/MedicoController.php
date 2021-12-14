@@ -38,6 +38,8 @@ class MedicoController
             } else{
                 require_once ("Views/Medico/failed-login.php");
             }
+        }else{
+            echo "No puede";
         }
     }
 

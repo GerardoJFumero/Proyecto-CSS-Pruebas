@@ -38,7 +38,6 @@ class PacienteController
             $tipo_sangre=$_POST['tipo_sangre'];
             $direccion=$_POST['direccion'];  
         
-            
         //Variables para la protección contra errores
         /**$nombre_error ="";**/
         //Para cada variable, debe verificar que el campo no esté vacío y cumpla las reglas establecidas.
