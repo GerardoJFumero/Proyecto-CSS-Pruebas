@@ -49,7 +49,7 @@ class MedicoController
                         break;
 
                         case false:
-                        echo "Usuario no Existe";
+                        echo "Esta cédula no está registrada";
                         break;
                     }     
             } else{

@@ -56,7 +56,7 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="direccion">Dirección residencial</label>
+                    <label for="direccion">Dirección Residencial</label>
                     <input type="text" class="form-control" id="direccion" name="direccion"
                         placeholder="Calle, barrio, número de residencia">
                 </div>
