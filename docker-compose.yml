@@ -19,6 +19,6 @@ services:
     volumes:
       - ./app:/var/www/html
     ports:
-      - 80:80
+      - 85:80
     depends_on:
       - mysql
