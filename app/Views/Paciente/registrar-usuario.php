@@ -42,16 +42,16 @@
                     </div>
                     <div class="form-group col-md-2">
                         <label>Tipo de sangre</label>
-                        <select id="policlinica" name="policlinica" class="form-control"  required>
-                            <option for="" value="1" >O negativo</option>
-                            <option for=""  value="2" >O positivo</option>
-                            <option for=""  value="3" >O</option>
-                            <option for=""  value="4" >A negativo</option>
-                            <option for=""  value="5" >A positivo</option>
-                            <option for=""  value="6" >B negativo</option>
-                            <option for=""  value="7" >B positivo</option>
-                            <option for=""  value="8" >AB negativo</option>
-                            <option for=""  value="9" >AB positivo</option>
+                        <select id="policlinica" name="tipo_sangre" class="form-control"  required>
+                            <option for="O Negativo" value="O-" >O negativo</option>
+                            <option for="O positivo"  value="O+" >O positivo</option>
+                            <option for="O"  value="3" >O</option>
+                            <option for="A Negativo"  value="A-" >A negativo</option>
+                            <option for="A Positivo"  value="A+" >A positivo</option>
+                            <option for="B Negativo "  value="B-" >B negativo</option>
+                            <option for="B positivo"  value="B+" >B positivo</option>
+                            <option for="AB Negativo"  value="AB-" >AB negativo</option>
+                            <option for="AB Positivo"  value="AB+" >AB positivo</option>
                         </select>
                     </div>
                 </div>

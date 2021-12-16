@@ -28,14 +28,17 @@ class PacienteModel
     public function registrarPaciente($nombres, $apellidos, $cedula, $fechanac, $tipo_sangre, $direccion)
     {
         //Punteros que permiten verificar la existencia de información en la BDD
-        $consulta = $this->db->query("INSERT INTO paciente (nombre, apellido, cedula, fechanac, tipo_sangre, direccion)
-            VALUES ('" . $nombres . "','" . $apellidos . "','" .$cedula . "','" . $fechanac . "','" . $tipo_sangre . "','" . $direccion . "');");
-        if ($consulta) {
-            return true;
-        } else {
+        if(!empty($nombres) && !empty($apellidos) && !empty($cedula) && !empty($fechanac) && !empty($tipo_sangre) && !empty($direccion)){
+            $consulta = $this->db->query("INSERT INTO paciente (nombre, apellido, cedula, fechanac, tipo_sangre, direccion)
+                VALUES ('" . $nombres . "','" . $apellidos . "','" .$cedula . "','" . $fechanac . "','" . $tipo_sangre . "','" . $direccion . "');");
+            if ($consulta) {
+                return true;
+            } else {
+                return false;
+            }
+        } else{
             return false;
-        }
-            
+        } 
     }
 
     public function verificarDatosPaciente($cedula,$fechanac)

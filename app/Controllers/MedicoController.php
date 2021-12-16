@@ -61,7 +61,6 @@ class MedicoController
     }
 
     public function index(){
-        echo "Inicia Sesión";
         require_once ("Views/Medico/medico-index.php");
     }
 

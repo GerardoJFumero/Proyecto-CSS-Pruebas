@@ -30,8 +30,6 @@ class PacienteController
     //Esta función permite registrar un paciente siguiendo las reglas de modelo de negocio
     public function guardar(){
 
-            $direccion=($_POST['direccion']);  
-
         if($_SERVER["REQUEST_METHOD"] == "POST"){
 
             //Se verifica que el nombre no esté vacío
@@ -101,7 +99,42 @@ class PacienteController
             } else {
                 $tipo_sangre=($_POST['tipo_sangre']);
             }
+
+            if(empty($_POST['direccion'])){
+                echo "El campo direccion no puede estar vacío";
+            } else{
+                if ((strlen($_POST['direccion']))>100){
+                    echo "La dirección no puede tener más de 100 caracteres";
+                } else {
+                    $direccion=($_POST['direccion']);
+                }
+            }
         }
+
+        if(!empty($nombres) && !empty($apellidos) && !empty($cedula) && !empty($fechanac) && !empty($tipo_sangre) && !empty($direccion)){
+            
+            $paciente= new PacienteModel();
+            $existe_paciente = $paciente->verificarPaciente($cedula);
+
+                if (!$existe_paciente){
+                    $paciente=new PacienteModel();
+                    $paciente->registrarPaciente($nombres,$apellidos,$cedula,$fechanac,$tipo_sangre,$direccion);
+                        if ($paciente==true){
+                            $datos = $paciente->Info($cedula);
+                            require_once('Views/Paciente/registro-completo.php');
+                        } else {
+                            echo "Registro no Completado";
+                        }
+                    
+                }else{
+                    echo "La cédula ya se encuentra registrada";
+                }
+        }
+    }
+
+    //Función para calcular la cantidad de letras en una cadena
+    public function cantidadLetras($entrada){
+
     }
 
     public function validarCedula($entrada){
