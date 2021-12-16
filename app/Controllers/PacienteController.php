@@ -132,10 +132,6 @@ class PacienteController
         }
     }
 
-    //Función para calcular la cantidad de letras en una cadena
-    public function cantidadLetras($entrada){
-
-    }
 
     public function validarCedula($entrada){
 
@@ -183,44 +179,96 @@ class PacienteController
     //Esta funcion verifica que los datos del cliente exitan en la base de datos
     //Una vez revise del POST la cedula y la fecha de nacimiento, verifica mediante verificarDatosPaciente su existencia.
     public function cita_nueva_solicitada(){
-        //Variables obtenidas desde el post
+
         
-        $cedula=$_POST['cedula'];
-        $fechanac=$_POST['fechanac'];
-        $email=$_POST['email'];
-        $telefono=$_POST['telefono'];
         $policlinica=$_POST['policlinica'];
         $especialidad=$_POST['especialidad'];
-        
-        //Si los campos no están vacíos, verifica su existencia
-        if(!empty($cedula) && !empty($fechanac)){
-            $paciente= new PacienteModel();
-            $existe_paciente = $paciente->verificarDatosPaciente($cedula, $fechanac);
 
-                //Si el paciente existe redirigir a la pagina de programar cita, de lo contrario, error
-                if($existe_paciente){
-                    $paciente = new PacienteModel();
-                    $cita_agendada = $paciente -> asignarCita($cedula, $email, $telefono, $policlinica, $especialidad);
+        if($_SERVER["REQUEST_METHOD"] == "POST"){
 
-                    if($cita_agendada){
-                        $num_cita = $this->db->query("SELECT numero_cita FROM citas WHERE numero_cita = (SELECT MAX(numero_cita) FROM citas)");
-                        $num= mysqli_fetch_array($num_cita);
-                        $fecha = $this->db->query("SELECT fecha_cita FROM citas WHERE numero_cita = (SELECT MAX(numero_cita) FROM citas)");
-                        $fec= mysqli_fetch_array($fecha);
-                        require_once('Views/Paciente/cita-nueva-registrada.php');
+            //Las variables cédula y fecha de nacimiento deben ser verificadas antes de probar todos los datos, por ende no pueden estar vacías
+            if(empty($_POST['cedula'])){
+                echo "El campo cédula no puede estar vacío";
+            } else{
+                $cedula=$_POST['cedula'];
+            }        
+            //Se debe verificar todos los datos no estén vacíos, para cada dato se hará la verificación
+            if(empty($_POST['fechanac'])){
+                echo "El campo fecha de nacimiento no puede estar vacío";
+            } else{
+                $fechanac=$_POST['fechanac'];
+            }
 
-                    }  else{
-                        echo "Cita no agendada, retroceda a la página anterior";
-                    }
+            //Si todos los datos no tuvieron campos vacíos, se empieza la verificación de datos
+            if(!empty($cedula) && !empty($fechanac) && !empty($policlinica) && !empty($especialidad)){
+                //Se verifica que la cédula se encuentre registrada en la BDD
+                $paciente= new PacienteModel();
+                $existe_paciente = $paciente->verificarPaciente($cedula);
+                //Se debe verificar que el paciente y la cédula correspondan en la BDD
+                if ($existe_paciente==true){
+                    $paciente= new PacienteModel();
+                    $coinciden = $paciente->verificarDatosPaciente(($cedula), ($fechanac));
+                            if ($coinciden==true){
+                            //Verificación del email
+                            if(empty($_POST['email'])){
+                                echo "El campo email no puede estar vacío";
 
-                }else{
-                    echo "No existe el paciente";
-                    } 
+                            } else{
+                                $val_email = $this->validarEmail($_POST['email']);
+                                if($val_email==true){
+                                    $email=$_POST['email'];
+                                }   else{
+                                        echo "El campo email no sigue los parámetros establecidos";
+                                    }
+                            }
 
-        }else{
-            echo "campos vacíos";
+                            //Verificación del telefono
+                            if(empty($_POST['telefono'])){
+                                echo "El campo numero de celular no puede estar vacío";
+                            } else {
+                                $longitud = $this->cantidadCaracter($_POST['telefono']);
+                                    switch($longitud){
+                                        case ($longitud>=7&&$longitud<9):
+                                            $telefono=$_POST['telefono'];
+                                            break;
+                                        default:
+                                            echo "El campo numero debe tener de 6 a 8 caracteres numéricos";
+                                    }
+                            }
+                            if(!empty($telefono) && !empty($email)){
+                                $cita_agendada = $paciente -> asignarCita($cedula, $email, $telefono, $policlinica, $especialidad);
+                                    if($cita_agendada){
+                                        $num_cita = $this->db->query("SELECT numero_cita FROM citas WHERE numero_cita = (SELECT MAX(numero_cita) FROM citas)");
+                                        $num= mysqli_fetch_array($num_cita);
+                                        $fecha = $this->db->query("SELECT fecha_cita FROM citas WHERE numero_cita = (SELECT MAX(numero_cita) FROM citas)");
+                                        $fec= mysqli_fetch_array($fecha);
+                                        require_once('Views/Paciente/cita-nueva-registrada.php');
+                                    }
+                            }
+                            } else{
+                                echo "La fecha de nacimiento no corresponde al paciente";
+                            }
+
+                } else{
+                    echo "La cedula no se encuentra registrada";
+                }
+            }
         }
-    } 
+    }
+
+    public function cantidadCaracter($entrada){
+        return (strlen($entrada));
+    }
+
+    public function validarEmail($entrada){
+
+        $entrada=filter_var($entrada,FILTER_SANITIZE_EMAIL);
+            if (filter_var($entrada, FILTER_VALIDATE_EMAIL)) {
+                return true;
+            } else{
+                return false;
+            }
+    }
 
     public function consultar_cita(){
         require_once('Views/Paciente/consultar-estado.php');
@@ -267,44 +315,66 @@ class PacienteController
 
     public function cita_cancelada(){
 
-        $cedula=$_POST['cedula'];
-        $fechanac=$_POST['fechanac'];
-        $numero_cita=$_POST['numero_cita'];
-        $verificador=$_POST['verificador'];
+        if($_SERVER["REQUEST_METHOD"] == "POST"){
 
-        switch ($verificador){
+            //Las variables cédula y fecha de nacimiento deben ser verificadas antes de probar todos los datos, por ende no pueden estar vacías
+            if(empty($_POST['cedula'])){
+                echo "El campo cédula no puede estar vacío";
+            } else{
+                $cedula=$_POST['cedula'];
+            }        
+            //Se debe verificar todos los datos no estén vacíos
+            if(empty($_POST['fechanac'])){
+                echo "El campo fecha de nacimiento no puede estar vacío";
+            } else{
+                $fechanac=$_POST['fechanac'];
+            }
 
-            case "Cancelar":
+            if(empty($_POST['numero_cita'])){
+                echo "El campo fecha de nacimiento no puede estar vacío";
+            } else{
+                $numero_cita=$_POST['numero_cita'];
+            }
 
-                $paciente= new PacienteModel();
-                $datos_correctos = $paciente->verificarDatosCita($cedula, $fechanac, $numero_cita);
-                    if($datos_correctos){
+            $verificador=$_POST['verificador'];
+
+            switch ($verificador){
+
+                case ("Cancelar"||"cancelar"): 
+
+                    $paciente= new PacienteModel();
+                    $existe_paciente = $paciente->verificarPaciente($cedula);
+                    //Se debe verificar que el paciente y la cédula correspondan en la BDD
+                    if ($existe_paciente==true){
+
                         $paciente= new PacienteModel();
-                        $datos_correctos = $paciente->cancelarCita($numero_cita);
-                        require_once('Views/Paciente/cita-cancelada.php');
+                        $coinciden = $paciente->verificarDatosPaciente(($cedula), ($fechanac));
+                            if ($coinciden==true){
+
+                            }else{
+                                echo "La fecha de nacimiento no correponde al paciente";
+                            }
                     } else{
-                        include_once('Views/Error/error-datos-incorrectos.php');
+                        echo "La cedula no se encuentra registrada";
                     }
-                break;
 
-            case "cancelar":
+                    
+                    $paciente= new PacienteModel();
+                    $datos_correctos = $paciente->verificarDatosCita($cedula, $fechanac, $numero_cita);
+                        if($datos_correctos){
+                            $paciente= new PacienteModel();
+                            $datos_correctos = $paciente->cancelarCita($numero_cita);
+                            require_once('Views/Paciente/cita-cancelada.php');
+                        } else{
+                            include_once('Views/Error/error-datos-incorrectos.php');
+                        }
+                    break;
+                default:
+                include_once('Views/Error/error-cancelar.php');
+            }
 
-                $paciente= new PacienteModel();
-                $datos_correctos = $paciente->verificarDatosCita($cedula, $fechanac, $numero_cita);
-                    if($datos_correctos){
-                        $paciente= new PacienteModel();
-                        $datos_correctos = $paciente->cancelarCita($numero_cita);
-                        require_once('Views/Paciente/cita-cancelada.php');
-                    } else{
-                        include_once('Views/Error/error-datos-incorrectos.php');
-                    }
-                
-                break;
-
-            default:
-            include_once('Views/Error/error-cancelar.php');
-        }
-
+            }
+    
     }
 
 }
