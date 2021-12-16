@@ -20,7 +20,7 @@
     <!-- Contenido de la sección -->
     <div class="container-fluid">
         <div class="jumbotron text-center">
-            <h4 class="display-4">¡Datos registrados correctamente!</h4>
+            <h4 class="display-4">¡Paciente registrado correctamente!</h4>
             <br>
             <tbody>
             <?php 

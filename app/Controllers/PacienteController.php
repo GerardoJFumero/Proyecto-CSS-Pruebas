@@ -30,51 +30,108 @@ class PacienteController
     //Esta función permite registrar un paciente siguiendo las reglas de modelo de negocio
     public function guardar(){
 
-            //Se guardan los datos registrados en POST a las variables correspondientes
-            $nombres=$_POST['nombres'];
-            $apellidos=$_POST['apellidos'];
-            $cedula=$_POST['cedula'];
-            $fechanac=$_POST['fechanac'];
-            $tipo_sangre=$_POST['tipo_sangre'];
-            $direccion=$_POST['direccion'];  
-        //Variables para la protección contra errores
-        /**$nombre_error ="";**/
-        //Para cada variable, debe verificar que el campo no esté vacío y cumpla las reglas establecidas.
-        /**if(empty(trim($_POST['nombres']))){
-            $nombre_error = "El campo nombre no puede estar vacío."; 
-        }    elseif(!preg_match('/^8-[a-zA-Z]+$/', trim($_POST["nombres"]))){
-            $nombre_error = "El nombre solo admite letras.";
-        } else{
-            $nombres = trim($_POST["nombres"]);
-        }**/
+            $direccion=($_POST['direccion']);  
 
-        
-            //Cuando se debe registrar un cliente, se debe verificar que no exista en la base de datos
-        
-        if(!empty($nombres) && !empty($apellidos) && !empty($cedula) && !empty($fechanac) && !empty($tipo_sangre) && !empty($direccion)){
-            $paciente= new PacienteModel();
-            $existe_paciente = $paciente->verificarPaciente($cedula);
+        if($_SERVER["REQUEST_METHOD"] == "POST"){
 
-                if(!$existe_paciente){
+            //Se verifica que el nombre no esté vacío
+            if(empty($_POST['nombres'])){
+                echo "El campo nombres no puede estar vacío";
+            //Si no está vacía, se verifica que sólo contenga letras    
+            } else {
+                $val_nombre = $this->validarNombre($_POST['nombres']);
+                switch ($val_nombre){
+                    case "Letras":
+                        echo "El campo nombres sólo puede contener letras\n";
+                        break;
+                    case "Cantidad":
+                        echo "El campo nombres solo puede contener de 3 a 25 letras\n";
+                        break;
+                    case "Correcto";
+                        $nombres=($_POST['nombres']);
+                        break;
+                }
+            }
 
-                    if($paciente->registrarPaciente($nombres,$apellidos,$cedula,$fechanac,$tipo_sangre,$direccion)){
-                        $paciente=new PacienteModel();
-                        $datos = $paciente->Info($cedula);
-                        require_once('Views/Paciente/registro-completo.php');
+            //Verificador del apellido igual que el del nombre
+            if(empty($_POST['apellidos'])){
+                echo "El campo apellidos no puede estar vacío\n";
+            } else{
+                $val_apellido = $this->validarNombre($_POST['apellidos']);
+                switch ($val_apellido){
 
-                    }else{
-                    echo "Error en la conexión a la BDD";
-                    $this->error();
-                    } 
+                    case "Letras":
+                        echo "El campo apellidos sólo puede contener letras\n";
+                        break;
+                    case "Cantidad":
+                        echo "El campo apellidos solo puede contener de 3 a 25 letras\n";
+                        break;
+                    case "Correcto";
+                        $apellidos=($_POST['apellidos']);
+                        break;
+                }
+            }
 
-                }else{
-                echo "El paciente ya existe";
-                $this->error();
-                } 
+            //Primero se verifica que el campo cédula no esté vacío
+            if(empty($_POST['cedula'])){
+                echo "El campo cédula no puede estar vacío\n";
+            //Si no está vacío, se verifica que cumpla los parámetros establecidos de cédula panameña con la función validad cédula
+            } else {
+                $val_cedula = $this->validarCedula($_POST['cedula']);
+                switch ($val_cedula){
 
-            }else{
-                echo "Debe rellenar todos los campos";
-                $this->error();
+                    case "Correcto":
+                        $cedula=($_POST['cedula']);
+                        break;
+
+                    case "Incorrecto":
+                        echo "La cédula debe seguir los parámetros de cédula panameña\n";
+                        break;
+                }
+            }
+
+            if(empty($_POST['fechanac'])){
+                echo "El campo fecha de nacimiento no puede estar vacío\n";
+            } else{
+                $fechanac = $_POST['fechanac'];
+            }
+
+            if(empty($_POST['tipo_sangre'])){
+                echo "El campo tipo de sangre no puede estar vacío";
+            } else {
+                $tipo_sangre=($_POST['tipo_sangre']);
+            }
+        }
+    }
+
+    public function validarCedula($entrada){
+
+        $resultado="";
+        //Preg_match permite definir parámetros específicos de entrada a un input
+        if(!preg_match(('/^(([1][0-3]-[0-9]+-[0-9]+)|([1-9]-[0-9]+-[0-9]+))+$/'),$entrada)){
+            return $resultado="Incorrecto";
+        }else{
+            return $resultado="Correcto";
+        }
+    }
+
+    public function validarNombre($entrada){
+
+        $resultado="";
+
+        switch ($entrada){
+
+            case (!preg_match(('/^[a-z A-ZáéíóúüñÁÉÍÓÚÜÑ]+$/'),$entrada)):
+                return $resultado="Letras";
+            break;
+    
+            default:
+                if ((strlen($entrada)<3) || (strlen($entrada)>25)){
+                    return $resultado="Cantidad";
+                }   else{
+                    return $resultado="Correcto";
+                }
+            break;
         }
     }
 
