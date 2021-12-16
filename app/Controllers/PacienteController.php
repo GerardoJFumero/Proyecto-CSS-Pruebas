@@ -101,7 +101,7 @@ class PacienteController
             }
 
             if(empty($_POST['direccion'])){
-                echo "El campo direccion no puede estar vacío";
+                echo "El campo dirección no puede estar vacío";
             } else{
                 if ((strlen($_POST['direccion']))>100){
                     echo "La dirección no puede tener más de 100 caracteres";
@@ -211,20 +211,20 @@ class PacienteController
                             if ($coinciden==true){
                             //Verificación del email
                             if(empty($_POST['email'])){
-                                echo "El campo email no puede estar vacío";
+                                echo "El campo correo no puede estar vacío";
 
                             } else{
                                 $val_email = $this->validarEmail($_POST['email']);
                                 if($val_email==true){
                                     $email=$_POST['email'];
                                 }   else{
-                                        echo "El campo email no sigue los parámetros establecidos";
+                                        echo "El formato del correo no es válido";
                                     }
                             }
 
                             //Verificación del telefono
                             if(empty($_POST['telefono'])){
-                                echo "El campo numero de celular no puede estar vacío";
+                                echo "El campo número de celular no puede estar vacío";
                             } else {
                                 $longitud = $this->cantidadCaracter($_POST['telefono']);
                                     switch($longitud){
@@ -232,7 +232,7 @@ class PacienteController
                                             $telefono=$_POST['telefono'];
                                             break;
                                         default:
-                                            echo "El campo numero debe tener de 6 a 8 caracteres numéricos";
+                                            echo "El campo número debe tener de 6 a 9 caracteres numéricos";
                                     }
                             }
                             if(!empty($telefono) && !empty($email)){
@@ -248,7 +248,6 @@ class PacienteController
                             } else{
                                 echo "La fecha de nacimiento no corresponde al paciente";
                             }
-
                 } else{
                     echo "La cedula no se encuentra registrada";
                 }
