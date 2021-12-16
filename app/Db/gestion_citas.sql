@@ -284,3 +284,4 @@ INSERT INTO `gestion_citas`.`paciente` (`nombre`, `apellido`, `cedula`, `fechana
 INSERT INTO `gestion_citas`.`paciente` (`nombre`, `apellido`, `cedula`, `fechanac`, `tipo_sangre`, `direccion`) VALUES ('Humberto', 'Jurado Adrianza', '8-000-0017', '1977-05-03', 'A+', 'Via Isael, Terrasol');
 INSERT INTO `gestion_citas`.`paciente` (`nombre`, `apellido`, `cedula`, `fechanac`, `tipo_sangre`, `direccion`) VALUES ('Juan Manuel', 'Lopez Maduro', '8-000-0018', '1999-11-27', 'A-', 'Costa del Este, Vista Mar');
 INSERT INTO `gestion_citas`.`paciente` (`nombre`, `apellido`, `cedula`, `fechanac`, `tipo_sangre`, `direccion`) VALUES ('Maria Fernanda', 'Jimenez López', '8-000-0019', '2000-05-23', 'O+', 'Via Isael, Terramar');
+

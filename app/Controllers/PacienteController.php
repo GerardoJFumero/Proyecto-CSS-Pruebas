@@ -349,8 +349,20 @@ class PacienteController
 
                         $paciente= new PacienteModel();
                         $coinciden = $paciente->verificarDatosPaciente(($cedula), ($fechanac));
+                        
                             if ($coinciden==true){
 
+                                //Ahora se verifica que el número de cita corresponda a ese paciente
+                                $paciente= new PacienteModel();
+                                $datos_correctos = $paciente->verificarDatosCita($cedula, $numero_cita);
+
+                                    if ($datos_correctos==false){
+                                        echo "El número de cita no corresponde al paciente";
+                                    } else {
+                                        $paciente= new PacienteModel();
+                                        $datos_correctos = $paciente->cancelarCita($numero_cita);
+                                        require_once('Views/Paciente/cita-cancelada.php');
+                                    }
                             }else{
                                 echo "La fecha de nacimiento no correponde al paciente";
                             }
@@ -358,7 +370,7 @@ class PacienteController
                         echo "La cedula no se encuentra registrada";
                     }
 
-                    
+
                     $paciente= new PacienteModel();
                     $datos_correctos = $paciente->verificarDatosCita($cedula, $fechanac, $numero_cita);
                         if($datos_correctos){
