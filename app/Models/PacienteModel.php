@@ -104,15 +104,13 @@ class PacienteModel
     }
 
 
-    public function verificarDatosCita($cedula, $fechanac, $numero_cita){
+    public function verificarDatosCita($cedula, $numero_cita){
 
     //Puntero que permiten verificar la existencia de información en la BDD
         $consulta = $this->db->query("SELECT count(*) as contador from citas where cedula_paciente = '" . $cedula . "' and numero_cita = '" . $numero_cita . "';"  );
-        $consulta2 = $this->db->query("SELECT count(*) as contador2 from paciente where cedula = '" . $cedula . "' and fechanac = '" . $fechanac . "';"  );
         //Puntero que permiten verificar la existencia de información en la BDD
         $existe_cita = $consulta->fetch_assoc();
-        $existe_paciente = $consulta2->fetch_assoc();
-        if (($existe_cita['contador'] > 0)&&($existe_paciente['contador2'] > 0)) {
+        if (($existe_cita['contador'] > 0)) {
             return true;
         } else {
             return false;
@@ -144,7 +142,11 @@ class PacienteModel
 
     public function cancelarCita($numero_cita){
         $consulta = $this->db->query("UPDATE `citas` SET `estado` = 'Cancelada' WHERE `citas`.`numero_cita` = $numero_cita");
-        return $consulta;
+        if ($consulta==true){
+            return true;
+        } else{
+            return false;
+        }
     }
 
 }

@@ -26,17 +26,17 @@
                     </div>
                     <div class="form-group col-md-6">
                         <label>Fecha de nacimiento</label>
-                        <input type="date" class="form-control" id="fechanac" name="fechanac" placeholder="" required>
+                        <input type="date" class="form-control" id="fechanac" name="fechanac" placeholder="">
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <label>Correo electrónico</label>
-                        <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Email">
                     </div>
                     <div class="form-group col-md-6">
                         <label>Número de celular</label>
-                        <input type="number" class="form-control" id="telefono" name="telefono" placeholder="6XXXXXXX (Sin guiones)" required>
+                        <input type="number" class="form-control" id="telefono" name="telefono" placeholder="6XXXXXXX (Sin guiones)">
                     </div>
                 </div>
                 <div class="form-row">

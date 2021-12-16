@@ -138,8 +138,8 @@ CREATE TABLE `usuario` (
 -- Volcado de datos para la tabla `usuario`
 --
 
-INSERT INTO `usuario` (`cedula_medico`, `contraseña`) VALUES
-('8-123-4567', 'M3d1c04dm1n');
+INSERT INTO `usuario` (`cedula_medico`, `password`) VALUES
+('8-000-0001', 'clave321');
 
 --
 -- Índices para tablas volcadas
@@ -274,6 +274,14 @@ ALTER TABLE `registro_citas`
   ADD CONSTRAINT `registro_numcita_fk` FOREIGN KEY (`numero_cita`) REFERENCES `citas` (`numero_cita`) ON UPDATE CASCADE;
 COMMIT;
 
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */
+
+INSERT INTO `gestion_citas`.`paciente` (`nombre`, `apellido`, `cedula`, `fechanac`, `tipo_sangre`, `direccion`) VALUES ('Rafael', 'Alejandro', '8-000-0011', '2003-03-26', 'O+', 'Urb. Versalles, Casa 42D');
+INSERT INTO `gestion_citas`.`paciente` (`nombre`, `apellido`, `cedula`, `fechanac`, `tipo_sangre`, `direccion`) VALUES ('Ricardo Andrés', 'Marval Jurado', '8-000-0012', '2005-11-07', 'O+', 'Urb. Versalles, Casa 42F');
+INSERT INTO `gestion_citas`.`paciente` (`nombre`, `apellido`, `cedula`, `fechanac`, `tipo_sangre`, `direccion`) VALUES ('Bruno', 'Diaz Gonzales', '8-000-0013', '1960-03-05', 'O-', 'Santa María, Valencia');
+INSERT INTO `gestion_citas`.`paciente` (`nombre`, `apellido`, `cedula`, `fechanac`, `tipo_sangre`, `direccion`) VALUES ('Marvel Cecilia', 'Ramirez Contreras', '8-000-0014', '1941-12-29', 'O+', 'Via Israel, Terramar');
+INSERT INTO `gestion_citas`.`paciente` (`nombre`, `apellido`, `cedula`, `fechanac`, `tipo_sangre`, `direccion`) VALUES ('José Alejandro', 'Totesautt Duarte', '8-000-0015', '1999-10-20', 'O+', 'Via España, Vista Sol');
+INSERT INTO `gestion_citas`.`paciente` (`nombre`, `apellido`, `cedula`, `fechanac`, `tipo_sangre`, `direccion`) VALUES ('Isaac Eliezer', 'Lamus Díaz', '8-000-0016', '1999-02-24', 'O-', 'Costa del Este, Vista Mar');
+INSERT INTO `gestion_citas`.`paciente` (`nombre`, `apellido`, `cedula`, `fechanac`, `tipo_sangre`, `direccion`) VALUES ('Humberto', 'Jurado Adrianza', '8-000-0017', '1977-05-03', 'A+', 'Via Isael, Terrasol');
+INSERT INTO `gestion_citas`.`paciente` (`nombre`, `apellido`, `cedula`, `fechanac`, `tipo_sangre`, `direccion`) VALUES ('Juan Manuel', 'Lopez Maduro', '8-000-0018', '1999-11-27', 'A-', 'Costa del Este, Vista Mar');
+INSERT INTO `gestion_citas`.`paciente` (`nombre`, `apellido`, `cedula`, `fechanac`, `tipo_sangre`, `direccion`) VALUES ('Maria Fernanda', 'Jimenez López', '8-000-0019', '2000-05-23', 'O+', 'Via Isael, Terramar');
+
