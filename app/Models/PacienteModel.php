@@ -144,5 +144,24 @@ class PacienteModel
         return $consulta;
     }
 
+    public function reprogramarCita($cedula,$fechanac,$numero_cita){  
+        $fecha_cita = $consulta = $this->db->query("SELECT `fecha_cita` from `citas`");
+        $dias = random_int(7, 28);
+        $reprog_fecha = date("Y-m-d", strtotime($fecha_cita. "+ ".$dias." days"));
+
+        $consulta=$this->db->query("UPDATE `citas` SET `estado` = 'Reprogramada', `fecha_cita` = '$reprog_fecha' 
+                                    where `citas`.`numero_cita`=$numero_cita ");
+        $consulta=$this->db->query("UPDATE`registro_citas` SET`fecha_cita` = '$reprog_fecha' 
+        where `registro_citas`.`numero_cita`=$numero_cita ");
+
+        if($consulta){
+            return true;
+        }
+        else {
+            return false; 
+        }
+
+
+    }
 }
     
