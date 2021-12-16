@@ -41,9 +41,18 @@
                         <input type="date" class="form-control" id="fechanac" name="fechanac" placeholder="">
                     </div>
                     <div class="form-group col-md-2">
-                        <label for="tipo_sangre">Tipo de Sangre</label>
-                        <input type="text" class="form-control" id="tipo_sangre" name="tipo_sangre"
-                            placeholder="(Ejemplo: O+)">
+                        <label>Tipo de sangre</label>
+                        <select id="policlinica" name="policlinica" class="form-control"  required>
+                            <option for="" value="1" >O negativo</option>
+                            <option for=""  value="2" >O positivo</option>
+                            <option for=""  value="3" >O</option>
+                            <option for=""  value="4" >A negativo</option>
+                            <option for=""  value="5" >A positivo</option>
+                            <option for=""  value="6" >B negativo</option>
+                            <option for=""  value="7" >B positivo</option>
+                            <option for=""  value="8" >AB negativo</option>
+                            <option for=""  value="9" >AB positivo</option>
+                        </select>
                     </div>
                 </div>
                 <div class="form-group">
