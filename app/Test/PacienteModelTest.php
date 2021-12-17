@@ -16,8 +16,6 @@ class PacienteModelTest extends TestCase
         ];
     }
 
-    
-
     /**
      * @dataProvider cedulasProveedor
      */
