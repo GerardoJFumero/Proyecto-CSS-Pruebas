@@ -355,7 +355,7 @@ class PacienteController
                                 $fechanac=$_POST['fechanac'];
                             }
                             $paciente= new PacienteModel();
-                            $coinciden = $paciente->verificarDatosPaciente(($cedula), ($fechanac));
+                            $coinciden = $paciente->verificarDatosPaciente($cedula, $fechanac);
                             
                                 if ($coinciden==true){
     

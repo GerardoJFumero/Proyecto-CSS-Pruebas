@@ -3,6 +3,7 @@
 require_once(__DIR__.'/../Models/MedicoModel.php');
 require_once(__DIR__.'/../Models/PacienteModel.php');
 require_once(__DIR__ . '/../Db/db.php');
+
 use \PHPUnit\Framework\TestCase;
 
 class MedicoModelTest extends TestCase
