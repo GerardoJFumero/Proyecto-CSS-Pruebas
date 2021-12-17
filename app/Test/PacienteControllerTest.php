@@ -26,4 +26,38 @@ class PacienteControllerTest extends TestCase
         $paciente = new PacienteController();
         $this->assertEquals($salida, $paciente->validarEmail($entrada));
     }
+
+    public function NombresProvider(){
+        return[
+            'Caso 1' => ['',"Cantidad"],
+            'Caso 2' => ['Melissa',"Correcto"],
+            'Caso 3' => ['H3enry',"Letras"],
+            'Caso 4' => ['Me',"Cantidad"],
+            'Caso 5' => ['MelissaMelissaMelissaMelissa',"Cantidad"]
+        ];
+    }
+        /**
+        * @dataProvider NombresProvider
+        */
+        public function testValidarNombre($entrada,$resultado){
+            $prueba = new PacienteController();
+            $this->assertSame($resultado,$prueba->ValidarNombre($entrada));
+        }
+
+        public function CedulaProvider(){
+            return[
+                'Caso 1' => ['8-123-1235',"Correcto"],
+                'Caso 2' => ['81231235',"Incorrecto"],
+                'Caso 3' => ['8',"Incorrecto"],
+                'Caso 4' => ['8183818288',"Incorrecto"]
+            ];
+        }
+            /**
+            * @dataProvider CedulaProvider
+            */
+        public function testValidarCedula($entrada,$resultado){
+            $prueba = new PacienteController();
+            $this->assertEquals($resultado,$prueba->validarCedula($entrada));
+        }
+
 }

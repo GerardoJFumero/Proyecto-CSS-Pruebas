@@ -150,6 +150,7 @@ class PacienteController
 
         switch ($entrada){
 
+            //Preg_match 
             case (!preg_match(('/^[a-z A-ZáéíóúüñÁÉÍÓÚÜÑ]+$/'),$entrada)):
                 return $resultado="Letras";
             break;
