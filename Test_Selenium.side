@@ -4175,16 +4175,16 @@
       ],
       "value": ""
     }, {
-      "id": "d4a04429-2932-4481-96ff-8c9018006ef7",
+      "id": "3d9a580d-bb52-4999-bd1a-fe63f6dc3a49",
       "comment": "",
       "command": "assertText",
-      "target": "css=section",
+      "target": "css=.display-4",
       "targets": [
-        ["css=section", "css:finder"],
-        ["xpath=//section", "xpath:position"],
-        ["xpath=//section[contains(.,'La cedula no corresponde a ningún paciente')]", "xpath:innerText"]
+        ["css=.display-4", "css:finder"],
+        ["xpath=//h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'¡Cita Agendada!')]", "xpath:innerText"]
       ],
-      "value": "La cedula no corresponde a ningún paciente"
+      "value": "¡Cita Agendada!"
     }]
   }, {
     "id": "289f4d6f-9212-4092-80ec-6a6803c41068",
@@ -5881,6 +5881,1670 @@
       "targets": [],
       "value": "El campo número de celular no puede estar vacío"
     }]
+  }, {
+    "id": "17aa4ad2-27b0-4c8f-b0e4-2adae0fbbe1d",
+    "name": "CC001 - Flujo básico",
+    "commands": [{
+      "id": "b3200683-b548-48ce-b799-62ade27cd4c7",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8b21c3c7-0ab6-4479-bb4a-a53af1839f36",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1616x876",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ebb080dc-cad6-4b4f-8a8d-d73508954fb7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Citas Programadas",
+      "targets": [
+        ["linkText=Citas Programadas", "linkText"],
+        ["css=.nav-item:nth-child(2) > #navbarDropdown", "css:finder"],
+        ["xpath=//a[contains(text(),'Citas Programadas')]", "xpath:link"],
+        ["xpath=(//a[@id='navbarDropdown'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7fa886d6-62e6-4807-a363-583c3cfac2c5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Cancelar Cita",
+      "targets": [
+        ["linkText=Cancelar Cita", "linkText"],
+        ["css=.show > .dropdown-item:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Cancelar Cita')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[2]/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '?controller=Paciente&action=cancelar')]", "xpath:href"],
+        ["xpath=//li[2]/div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Cancelar Cita')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d5f59d77-a686-4e31-9012-41460083b328",
+      "comment": "",
+      "command": "click",
+      "target": "id=cedula",
+      "targets": [
+        ["id=cedula", "id"],
+        ["name=cedula", "name"],
+        ["css=.form-group:nth-child(3) > #cedula", "css:finder"],
+        ["xpath=//input[@id='cedula']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "32f4a423-eb26-4a6f-9910-84f6c5be4be4",
+      "comment": "",
+      "command": "type",
+      "target": "id=cedula",
+      "targets": [
+        ["id=cedula", "id"],
+        ["name=cedula", "name"],
+        ["css=.form-group:nth-child(3) > #cedula", "css:finder"],
+        ["xpath=//input[@id='cedula']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "8-123-1235"
+    }, {
+      "id": "a9d09dd0-e28e-4007-b7d9-0420ede2b7a2",
+      "comment": "",
+      "command": "click",
+      "target": "id=fechanac",
+      "targets": [
+        ["id=fechanac", "id"],
+        ["name=fechanac", "name"],
+        ["css=#fechanac", "css:finder"],
+        ["xpath=//input[@id='fechanac']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "138a4e1c-63dc-495d-b693-4b45bfad8d83",
+      "comment": "",
+      "command": "type",
+      "target": "id=fechanac",
+      "targets": [
+        ["id=fechanac", "id"],
+        ["name=fechanac", "name"],
+        ["css=#fechanac", "css:finder"],
+        ["xpath=//input[@id='fechanac']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "0002-01-05"
+    }, {
+      "id": "a66d0f6b-e38c-416f-a5df-260a41ac8962",
+      "comment": "",
+      "command": "type",
+      "target": "id=fechanac",
+      "targets": [
+        ["id=fechanac", "id"],
+        ["name=fechanac", "name"],
+        ["css=#fechanac", "css:finder"],
+        ["xpath=//input[@id='fechanac']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "0020-01-05"
+    }, {
+      "id": "2ff667da-9fa6-4780-88d1-2fda2a4b0648",
+      "comment": "",
+      "command": "type",
+      "target": "id=fechanac",
+      "targets": [
+        ["id=fechanac", "id"],
+        ["name=fechanac", "name"],
+        ["css=#fechanac", "css:finder"],
+        ["xpath=//input[@id='fechanac']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "0200-01-05"
+    }, {
+      "id": "14ff6f0f-a671-4d4d-8704-b3875ee5e271",
+      "comment": "",
+      "command": "type",
+      "target": "id=fechanac",
+      "targets": [
+        ["id=fechanac", "id"],
+        ["name=fechanac", "name"],
+        ["css=#fechanac", "css:finder"],
+        ["xpath=//input[@id='fechanac']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "2003-01-05"
+    }, {
+      "id": "54162b3b-33a2-4e96-980d-156adbcd1198",
+      "comment": "",
+      "command": "click",
+      "target": "id=numero_cita",
+      "targets": [
+        ["id=numero_cita", "id"],
+        ["name=numero_cita", "name"],
+        ["css=#numero_cita", "css:finder"],
+        ["xpath=//input[@id='numero_cita']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0142c1a2-3500-42e5-a87c-05f84bf55c81",
+      "comment": "",
+      "command": "type",
+      "target": "id=numero_cita",
+      "targets": [
+        ["id=numero_cita", "id"],
+        ["name=numero_cita", "name"],
+        ["css=#numero_cita", "css:finder"],
+        ["xpath=//input[@id='numero_cita']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "10"
+    }, {
+      "id": "b781bccb-614b-4c6e-ba45-c112e3f6902b",
+      "comment": "",
+      "command": "click",
+      "target": "name=verificador",
+      "targets": [
+        ["name=verificador", "name"],
+        ["css=.form-group:nth-child(7) > #cedula", "css:finder"],
+        ["xpath=(//input[@id='cedula'])[2]", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "facfa2aa-df49-4cf6-b6ec-f0c2fc6c8a8a",
+      "comment": "",
+      "command": "type",
+      "target": "name=verificador",
+      "targets": [
+        ["name=verificador", "name"],
+        ["css=.form-group:nth-child(7) > #cedula", "css:finder"],
+        ["xpath=(//input[@id='cedula'])[2]", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "Cancelar"
+    }, {
+      "id": "abd0f6c2-ee0b-4baf-933c-1605ab064de7",
+      "comment": "",
+      "command": "click",
+      "target": "name=verificar",
+      "targets": [
+        ["name=verificar", "name"],
+        ["css=.btn:nth-child(9)", "css:finder"],
+        ["xpath=//button[@name='verificar']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cancelar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1c0d10fa-3642-4361-8052-bb9d3956446a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.display-4",
+      "targets": [
+        ["css=.display-4", "css:finder"],
+        ["xpath=//h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'Cita Cancelada Correctamente')]", "xpath:innerText"]
+      ],
+      "value": "Cita Cancelada Correctamente"
+    }]
+  }, {
+    "id": "61450006-e639-4dec-9f55-d34855e25b48",
+    "name": "CC004 - Fecha de nacimiento sin coincidencia",
+    "commands": [{
+      "id": "e46193ae-93b0-4596-bc9e-0a05e71ad9a4",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3af522a8-38f4-4351-bef9-21a65f153553",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1616x876",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e6e685a5-e785-40eb-ae73-0273dbd2c84a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Citas Programadas",
+      "targets": [
+        ["linkText=Citas Programadas", "linkText"],
+        ["css=.nav-item:nth-child(2) > #navbarDropdown", "css:finder"],
+        ["xpath=//a[contains(text(),'Citas Programadas')]", "xpath:link"],
+        ["xpath=(//a[@id='navbarDropdown'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ae9baa4a-6903-4db0-80d5-444c4209c552",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Cancelar Cita",
+      "targets": [
+        ["linkText=Cancelar Cita", "linkText"],
+        ["css=.show > .dropdown-item:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Cancelar Cita')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[2]/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '?controller=Paciente&action=cancelar')]", "xpath:href"],
+        ["xpath=//li[2]/div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Cancelar Cita')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d8d73644-9f37-4a61-9581-946f0808d565",
+      "comment": "",
+      "command": "click",
+      "target": "id=cedula",
+      "targets": [
+        ["id=cedula", "id"],
+        ["name=cedula", "name"],
+        ["css=.form-group:nth-child(3) > #cedula", "css:finder"],
+        ["xpath=//input[@id='cedula']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "828e461e-411d-493a-8399-27dc00133f90",
+      "comment": "",
+      "command": "type",
+      "target": "id=cedula",
+      "targets": [
+        ["id=cedula", "id"],
+        ["name=cedula", "name"],
+        ["css=.form-group:nth-child(3) > #cedula", "css:finder"],
+        ["xpath=//input[@id='cedula']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "8-123-1235"
+    }, {
+      "id": "1f526166-4739-4e02-bbc9-ec032b7baec3",
+      "comment": "",
+      "command": "click",
+      "target": "id=fechanac",
+      "targets": [
+        ["id=fechanac", "id"],
+        ["name=fechanac", "name"],
+        ["css=#fechanac", "css:finder"],
+        ["xpath=//input[@id='fechanac']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "881608fb-8827-4504-95f2-5d1467bab309",
+      "comment": "",
+      "command": "type",
+      "target": "id=fechanac",
+      "targets": [
+        ["id=fechanac", "id"],
+        ["name=fechanac", "name"],
+        ["css=#fechanac", "css:finder"],
+        ["xpath=//input[@id='fechanac']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "0002-01-05"
+    }, {
+      "id": "23066a52-5259-4128-bf7c-2e308fe803ae",
+      "comment": "",
+      "command": "type",
+      "target": "id=fechanac",
+      "targets": [
+        ["id=fechanac", "id"],
+        ["name=fechanac", "name"],
+        ["css=#fechanac", "css:finder"],
+        ["xpath=//input[@id='fechanac']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "0020-01-05"
+    }, {
+      "id": "c2399c91-cb18-4a67-bee9-9adeb4a37b10",
+      "comment": "",
+      "command": "type",
+      "target": "id=fechanac",
+      "targets": [
+        ["id=fechanac", "id"],
+        ["name=fechanac", "name"],
+        ["css=#fechanac", "css:finder"],
+        ["xpath=//input[@id='fechanac']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "0200-01-05"
+    }, {
+      "id": "63931520-cc74-4bfc-90e1-897e82f67560",
+      "comment": "",
+      "command": "type",
+      "target": "id=fechanac",
+      "targets": [
+        ["id=fechanac", "id"],
+        ["name=fechanac", "name"],
+        ["css=#fechanac", "css:finder"],
+        ["xpath=//input[@id='fechanac']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "2003-01-03"
+    }, {
+      "id": "395c4914-61fc-4349-b849-8d89d6623df1",
+      "comment": "",
+      "command": "click",
+      "target": "id=numero_cita",
+      "targets": [
+        ["id=numero_cita", "id"],
+        ["name=numero_cita", "name"],
+        ["css=#numero_cita", "css:finder"],
+        ["xpath=//input[@id='numero_cita']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "378772a1-1ca2-4bf9-84e9-abadfeea8b67",
+      "comment": "",
+      "command": "type",
+      "target": "id=numero_cita",
+      "targets": [
+        ["id=numero_cita", "id"],
+        ["name=numero_cita", "name"],
+        ["css=#numero_cita", "css:finder"],
+        ["xpath=//input[@id='numero_cita']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "10"
+    }, {
+      "id": "5bfaa354-1bdc-41dd-837d-64cc458dcd3a",
+      "comment": "",
+      "command": "click",
+      "target": "name=verificador",
+      "targets": [
+        ["name=verificador", "name"],
+        ["css=.form-group:nth-child(7) > #cedula", "css:finder"],
+        ["xpath=(//input[@id='cedula'])[2]", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "548fa284-28f8-4c7f-9e86-032e0b7b3e7c",
+      "comment": "",
+      "command": "type",
+      "target": "name=verificador",
+      "targets": [
+        ["name=verificador", "name"],
+        ["css=.form-group:nth-child(7) > #cedula", "css:finder"],
+        ["xpath=(//input[@id='cedula'])[2]", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "Cancelar"
+    }, {
+      "id": "ffdbd27c-f0a3-4e27-b330-daf730ff11a4",
+      "comment": "",
+      "command": "click",
+      "target": "name=verificar",
+      "targets": [
+        ["name=verificar", "name"],
+        ["css=.btn:nth-child(9)", "css:finder"],
+        ["xpath=//button[@name='verificar']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cancelar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8bc61813-7f41-4eef-982e-d20103c82bef",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=section",
+      "targets": [
+        ["css=section", "css:finder"],
+        ["xpath=//section", "xpath:position"],
+        ["xpath=//section[contains(.,'La cedula no se encuentra registrada')]", "xpath:innerText"]
+      ],
+      "value": "La fecha de nacimiento no correponde al paciente"
+    }]
+  }, {
+    "id": "14fbe90a-8277-4aa7-a976-f8068e016e5b",
+    "name": "CC002 - Cédula sin registrar",
+    "commands": [{
+      "id": "4432f7df-9b86-4104-95c1-221b1e077051",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ab98da76-f7d0-44f6-aac7-cad34f5fb52e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1616x876",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "16c74d59-78e1-4ed5-befa-81bfd7f9aa4b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Citas Programadas",
+      "targets": [
+        ["linkText=Citas Programadas", "linkText"],
+        ["css=.nav-item:nth-child(2) > #navbarDropdown", "css:finder"],
+        ["xpath=//a[contains(text(),'Citas Programadas')]", "xpath:link"],
+        ["xpath=(//a[@id='navbarDropdown'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7b5dabf9-e1c3-406f-80fc-cfe735fdf041",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Cancelar Cita",
+      "targets": [
+        ["linkText=Cancelar Cita", "linkText"],
+        ["css=.show > .dropdown-item:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Cancelar Cita')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[2]/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '?controller=Paciente&action=cancelar')]", "xpath:href"],
+        ["xpath=//li[2]/div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Cancelar Cita')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f9fd29e3-85b2-4edd-9e76-56a576a4195f",
+      "comment": "",
+      "command": "click",
+      "target": "id=cedula",
+      "targets": [
+        ["id=cedula", "id"],
+        ["name=cedula", "name"],
+        ["css=.form-group:nth-child(3) > #cedula", "css:finder"],
+        ["xpath=//input[@id='cedula']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0c74512e-66a9-4def-9d40-bf54c70f6eaf",
+      "comment": "",
+      "command": "type",
+      "target": "id=cedula",
+      "targets": [
+        ["id=cedula", "id"],
+        ["name=cedula", "name"],
+        ["css=.form-group:nth-child(3) > #cedula", "css:finder"],
+        ["xpath=//input[@id='cedula']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "8-123-1234"
+    }, {
+      "id": "8920fc1e-d41a-456c-b5a2-8ab9ca4a71b8",
+      "comment": "",
+      "command": "click",
+      "target": "id=fechanac",
+      "targets": [
+        ["id=fechanac", "id"],
+        ["name=fechanac", "name"],
+        ["css=#fechanac", "css:finder"],
+        ["xpath=//input[@id='fechanac']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4cd12162-4611-4e1b-ac31-23607a0b1b95",
+      "comment": "",
+      "command": "type",
+      "target": "id=fechanac",
+      "targets": [
+        ["id=fechanac", "id"],
+        ["name=fechanac", "name"],
+        ["css=#fechanac", "css:finder"],
+        ["xpath=//input[@id='fechanac']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "0002-01-05"
+    }, {
+      "id": "b935fc90-3147-4070-b8ca-5a6c669dae53",
+      "comment": "",
+      "command": "type",
+      "target": "id=fechanac",
+      "targets": [
+        ["id=fechanac", "id"],
+        ["name=fechanac", "name"],
+        ["css=#fechanac", "css:finder"],
+        ["xpath=//input[@id='fechanac']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "0020-01-05"
+    }, {
+      "id": "20990f54-0323-494f-942b-a583e021d31e",
+      "comment": "",
+      "command": "type",
+      "target": "id=fechanac",
+      "targets": [
+        ["id=fechanac", "id"],
+        ["name=fechanac", "name"],
+        ["css=#fechanac", "css:finder"],
+        ["xpath=//input[@id='fechanac']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "0200-01-05"
+    }, {
+      "id": "3ab1fe5b-4158-4015-908a-22be166b958b",
+      "comment": "",
+      "command": "type",
+      "target": "id=fechanac",
+      "targets": [
+        ["id=fechanac", "id"],
+        ["name=fechanac", "name"],
+        ["css=#fechanac", "css:finder"],
+        ["xpath=//input[@id='fechanac']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "2003-01-05"
+    }, {
+      "id": "ca71ba07-da71-4cb0-a0b5-82b6e0d8e4c7",
+      "comment": "",
+      "command": "click",
+      "target": "id=numero_cita",
+      "targets": [
+        ["id=numero_cita", "id"],
+        ["name=numero_cita", "name"],
+        ["css=#numero_cita", "css:finder"],
+        ["xpath=//input[@id='numero_cita']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "967a913d-c25d-46d0-906e-c13a8d717ffd",
+      "comment": "",
+      "command": "type",
+      "target": "id=numero_cita",
+      "targets": [
+        ["id=numero_cita", "id"],
+        ["name=numero_cita", "name"],
+        ["css=#numero_cita", "css:finder"],
+        ["xpath=//input[@id='numero_cita']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "10"
+    }, {
+      "id": "fbe9c1a5-41ba-464f-ba53-3a8b9a2096fc",
+      "comment": "",
+      "command": "click",
+      "target": "name=verificador",
+      "targets": [
+        ["name=verificador", "name"],
+        ["css=.form-group:nth-child(7) > #cedula", "css:finder"],
+        ["xpath=(//input[@id='cedula'])[2]", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "207dde3e-b76f-482b-b021-7a8b23e15ba0",
+      "comment": "",
+      "command": "type",
+      "target": "name=verificador",
+      "targets": [
+        ["name=verificador", "name"],
+        ["css=.form-group:nth-child(7) > #cedula", "css:finder"],
+        ["xpath=(//input[@id='cedula'])[2]", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "Cancelar"
+    }, {
+      "id": "a411245b-e170-479d-9d81-8d48ed56c01e",
+      "comment": "",
+      "command": "click",
+      "target": "name=verificar",
+      "targets": [
+        ["name=verificar", "name"],
+        ["css=.btn:nth-child(9)", "css:finder"],
+        ["xpath=//button[@name='verificar']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cancelar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "eae3c0d6-c01e-4ccc-abde-d3511de9968a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=section",
+      "targets": [
+        ["css=section", "css:finder"],
+        ["xpath=//section", "xpath:position"],
+        ["xpath=//section[contains(.,'La cedula no se encuentra registrada')]", "xpath:innerText"]
+      ],
+      "value": "La cédula no se encuentra registrada"
+    }]
+  }, {
+    "id": "25f1df51-c958-4de6-b8d6-107a2766e2f4",
+    "name": "CC003-  Campo Cédula vacío",
+    "commands": [{
+      "id": "3e0a5f9c-9386-4b0b-8069-3931aee4833c",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3bea4b1f-39c0-4bd5-a44a-c6fa2816d003",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1616x876",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2cbf3d4f-5ab2-444b-9eab-f0bbea34b8ef",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Citas Programadas",
+      "targets": [
+        ["linkText=Citas Programadas", "linkText"],
+        ["css=.nav-item:nth-child(2) > #navbarDropdown", "css:finder"],
+        ["xpath=//a[contains(text(),'Citas Programadas')]", "xpath:link"],
+        ["xpath=(//a[@id='navbarDropdown'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "735b266c-6a8c-4b88-b9f1-8436798f333f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Cancelar Cita",
+      "targets": [
+        ["linkText=Cancelar Cita", "linkText"],
+        ["css=.show > .dropdown-item:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Cancelar Cita')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[2]/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '?controller=Paciente&action=cancelar')]", "xpath:href"],
+        ["xpath=//li[2]/div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Cancelar Cita')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "234be2a0-9f2a-4471-a3b7-844795fc581f",
+      "comment": "",
+      "command": "click",
+      "target": "id=cedula",
+      "targets": [
+        ["id=cedula", "id"],
+        ["name=cedula", "name"],
+        ["css=.form-group:nth-child(3) > #cedula", "css:finder"],
+        ["xpath=//input[@id='cedula']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bd72ef92-70d9-4f05-ada5-a2016db595f2",
+      "comment": "",
+      "command": "type",
+      "target": "id=cedula",
+      "targets": [
+        ["id=cedula", "id"],
+        ["name=cedula", "name"],
+        ["css=.form-group:nth-child(3) > #cedula", "css:finder"],
+        ["xpath=//input[@id='cedula']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2682dc57-c515-4bc0-aa8a-958908850ba0",
+      "comment": "",
+      "command": "click",
+      "target": "id=fechanac",
+      "targets": [
+        ["id=fechanac", "id"],
+        ["name=fechanac", "name"],
+        ["css=#fechanac", "css:finder"],
+        ["xpath=//input[@id='fechanac']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dcb4e999-d934-49eb-a9a2-688833a3d593",
+      "comment": "",
+      "command": "type",
+      "target": "id=fechanac",
+      "targets": [
+        ["id=fechanac", "id"],
+        ["name=fechanac", "name"],
+        ["css=#fechanac", "css:finder"],
+        ["xpath=//input[@id='fechanac']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "0002-01-05"
+    }, {
+      "id": "548fd5d2-ae63-4402-a506-33737a233e34",
+      "comment": "",
+      "command": "type",
+      "target": "id=fechanac",
+      "targets": [
+        ["id=fechanac", "id"],
+        ["name=fechanac", "name"],
+        ["css=#fechanac", "css:finder"],
+        ["xpath=//input[@id='fechanac']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "0020-01-05"
+    }, {
+      "id": "1bf27335-b369-4661-945f-42ce8f66c853",
+      "comment": "",
+      "command": "type",
+      "target": "id=fechanac",
+      "targets": [
+        ["id=fechanac", "id"],
+        ["name=fechanac", "name"],
+        ["css=#fechanac", "css:finder"],
+        ["xpath=//input[@id='fechanac']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "0200-01-05"
+    }, {
+      "id": "502f3220-d2b0-46c2-a135-0b48ec52d400",
+      "comment": "",
+      "command": "type",
+      "target": "id=fechanac",
+      "targets": [
+        ["id=fechanac", "id"],
+        ["name=fechanac", "name"],
+        ["css=#fechanac", "css:finder"],
+        ["xpath=//input[@id='fechanac']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "2003-01-05"
+    }, {
+      "id": "41b24338-1b09-4e14-8c21-dd77828365f0",
+      "comment": "",
+      "command": "click",
+      "target": "id=numero_cita",
+      "targets": [
+        ["id=numero_cita", "id"],
+        ["name=numero_cita", "name"],
+        ["css=#numero_cita", "css:finder"],
+        ["xpath=//input[@id='numero_cita']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c53f355-1e12-4af2-9659-5886cbd6883e",
+      "comment": "",
+      "command": "type",
+      "target": "id=numero_cita",
+      "targets": [
+        ["id=numero_cita", "id"],
+        ["name=numero_cita", "name"],
+        ["css=#numero_cita", "css:finder"],
+        ["xpath=//input[@id='numero_cita']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "10"
+    }, {
+      "id": "f9cd6c36-f985-430f-95b7-7381751fdfba",
+      "comment": "",
+      "command": "click",
+      "target": "name=verificador",
+      "targets": [
+        ["name=verificador", "name"],
+        ["css=.form-group:nth-child(7) > #cedula", "css:finder"],
+        ["xpath=(//input[@id='cedula'])[2]", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d27f823-1360-4c14-bd7c-1a17224f8a0e",
+      "comment": "",
+      "command": "type",
+      "target": "name=verificador",
+      "targets": [
+        ["name=verificador", "name"],
+        ["css=.form-group:nth-child(7) > #cedula", "css:finder"],
+        ["xpath=(//input[@id='cedula'])[2]", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "Cancelar"
+    }, {
+      "id": "6a459557-24f1-4f20-9294-a7957250a251",
+      "comment": "",
+      "command": "click",
+      "target": "name=verificar",
+      "targets": [
+        ["name=verificar", "name"],
+        ["css=.btn:nth-child(9)", "css:finder"],
+        ["xpath=//button[@name='verificar']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cancelar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "eea887ad-6eae-4e46-9abe-a872a8460355",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=section",
+      "targets": [
+        ["css=section", "css:finder"],
+        ["xpath=//section", "xpath:position"],
+        ["xpath=//section[contains(.,'La cedula no se encuentra registrada')]", "xpath:innerText"]
+      ],
+      "value": "El campo cédula no puede estar vacíoLa cédula no se encuentra registrada"
+    }]
+  }, {
+    "id": "20ac5c33-6fff-4bb5-b399-e89b2544ad85",
+    "name": "CC005 - Campo Fecha vacío",
+    "commands": [{
+      "id": "99369146-5663-42b3-a859-1762960de478",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e1bb1b4a-e9fa-443e-8a37-bcbc97d0e45f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1616x876",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bd14636f-f42f-449f-b36f-24efe8dae805",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Citas Programadas",
+      "targets": [
+        ["linkText=Citas Programadas", "linkText"],
+        ["css=.nav-item:nth-child(2) > #navbarDropdown", "css:finder"],
+        ["xpath=//a[contains(text(),'Citas Programadas')]", "xpath:link"],
+        ["xpath=(//a[@id='navbarDropdown'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b8bac4b-5ed3-476a-ac38-1b786c8d956c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Cancelar Cita",
+      "targets": [
+        ["linkText=Cancelar Cita", "linkText"],
+        ["css=.show > .dropdown-item:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Cancelar Cita')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[2]/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '?controller=Paciente&action=cancelar')]", "xpath:href"],
+        ["xpath=//li[2]/div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Cancelar Cita')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0ae03ce6-7bee-4c3c-aff9-38b1c5591a8b",
+      "comment": "",
+      "command": "click",
+      "target": "id=cedula",
+      "targets": [
+        ["id=cedula", "id"],
+        ["name=cedula", "name"],
+        ["css=.form-group:nth-child(3) > #cedula", "css:finder"],
+        ["xpath=//input[@id='cedula']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "37f9fddb-0733-46a5-88e3-b2a3a2c40c1e",
+      "comment": "",
+      "command": "type",
+      "target": "id=cedula",
+      "targets": [
+        ["id=cedula", "id"],
+        ["name=cedula", "name"],
+        ["css=.form-group:nth-child(3) > #cedula", "css:finder"],
+        ["xpath=//input[@id='cedula']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "8-123-1235"
+    }, {
+      "id": "b5bace55-cfe0-48f9-8d23-19aa9e4e7e2a",
+      "comment": "",
+      "command": "click",
+      "target": "id=fechanac",
+      "targets": [
+        ["id=fechanac", "id"],
+        ["name=fechanac", "name"],
+        ["css=#fechanac", "css:finder"],
+        ["xpath=//input[@id='fechanac']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9806e657-f75e-465c-8475-6b63d0187edc",
+      "comment": "",
+      "command": "click",
+      "target": "id=numero_cita",
+      "targets": [
+        ["id=numero_cita", "id"],
+        ["name=numero_cita", "name"],
+        ["css=#numero_cita", "css:finder"],
+        ["xpath=//input[@id='numero_cita']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "01430427-2f3e-47f9-9767-e5f2f4d7355e",
+      "comment": "",
+      "command": "type",
+      "target": "id=numero_cita",
+      "targets": [
+        ["id=numero_cita", "id"],
+        ["name=numero_cita", "name"],
+        ["css=#numero_cita", "css:finder"],
+        ["xpath=//input[@id='numero_cita']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "10"
+    }, {
+      "id": "9dddb0f8-48dc-40f2-a617-d69efe7cb886",
+      "comment": "",
+      "command": "click",
+      "target": "name=verificador",
+      "targets": [
+        ["name=verificador", "name"],
+        ["css=.form-group:nth-child(7) > #cedula", "css:finder"],
+        ["xpath=(//input[@id='cedula'])[2]", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7857abbb-bc44-4d5d-a55e-f3b755c7c9c8",
+      "comment": "",
+      "command": "type",
+      "target": "name=verificador",
+      "targets": [
+        ["name=verificador", "name"],
+        ["css=.form-group:nth-child(7) > #cedula", "css:finder"],
+        ["xpath=(//input[@id='cedula'])[2]", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "Cancelar"
+    }, {
+      "id": "14f06c66-7617-46c4-9c57-92753389b35e",
+      "comment": "",
+      "command": "click",
+      "target": "name=verificar",
+      "targets": [
+        ["name=verificar", "name"],
+        ["css=.btn:nth-child(9)", "css:finder"],
+        ["xpath=//button[@name='verificar']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cancelar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "06cb99ce-9e54-4ab9-8db4-e9efb6d15803",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=section",
+      "targets": [],
+      "value": "El campo fecha de nacimiento no puede estar vacío"
+    }]
+  }, {
+    "id": "ebbeea6e-f649-403a-8284-a15fcdcdc3cf",
+    "name": "CC006 - Numero de cita no registrada",
+    "commands": [{
+      "id": "76ecf3de-380a-43d0-8f36-e33c2f918f44",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8005d92a-3860-4946-94f3-180984894134",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1616x876",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6a4cdfd8-9b26-4b1b-9b73-8ec78cb7f523",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Citas Programadas",
+      "targets": [
+        ["linkText=Citas Programadas", "linkText"],
+        ["css=.nav-item:nth-child(2) > #navbarDropdown", "css:finder"],
+        ["xpath=//a[contains(text(),'Citas Programadas')]", "xpath:link"],
+        ["xpath=(//a[@id='navbarDropdown'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b755b633-1c77-44db-a0db-36254c916cdc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Cancelar Cita",
+      "targets": [
+        ["linkText=Cancelar Cita", "linkText"],
+        ["css=.show > .dropdown-item:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Cancelar Cita')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[2]/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '?controller=Paciente&action=cancelar')]", "xpath:href"],
+        ["xpath=//li[2]/div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Cancelar Cita')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "537b5f60-3f0b-4824-8b12-6b34327c126c",
+      "comment": "",
+      "command": "click",
+      "target": "id=cedula",
+      "targets": [
+        ["id=cedula", "id"],
+        ["name=cedula", "name"],
+        ["css=.form-group:nth-child(3) > #cedula", "css:finder"],
+        ["xpath=//input[@id='cedula']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c2cfe8f-94c6-4dfc-94c0-8cd2fcf7e9da",
+      "comment": "",
+      "command": "type",
+      "target": "id=cedula",
+      "targets": [
+        ["id=cedula", "id"],
+        ["name=cedula", "name"],
+        ["css=.form-group:nth-child(3) > #cedula", "css:finder"],
+        ["xpath=//input[@id='cedula']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "8-123-1235"
+    }, {
+      "id": "6145f26e-e8b9-4170-b1bb-8a9226d1714d",
+      "comment": "",
+      "command": "click",
+      "target": "id=fechanac",
+      "targets": [
+        ["id=fechanac", "id"],
+        ["name=fechanac", "name"],
+        ["css=#fechanac", "css:finder"],
+        ["xpath=//input[@id='fechanac']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5f343482-e7ef-46c9-8443-2410bc7d3d72",
+      "comment": "",
+      "command": "type",
+      "target": "id=fechanac",
+      "targets": [
+        ["id=fechanac", "id"],
+        ["name=fechanac", "name"],
+        ["css=#fechanac", "css:finder"],
+        ["xpath=//input[@id='fechanac']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "2003-01-05"
+    }, {
+      "id": "9c124370-df3a-4127-947c-25cddd84347c",
+      "comment": "",
+      "command": "click",
+      "target": "id=numero_cita",
+      "targets": [
+        ["id=numero_cita", "id"],
+        ["name=numero_cita", "name"],
+        ["css=#numero_cita", "css:finder"],
+        ["xpath=//input[@id='numero_cita']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f33400c6-d4fd-4fcb-a2b5-b69245ef9e6b",
+      "comment": "",
+      "command": "type",
+      "target": "id=numero_cita",
+      "targets": [
+        ["id=numero_cita", "id"],
+        ["name=numero_cita", "name"],
+        ["css=#numero_cita", "css:finder"],
+        ["xpath=//input[@id='numero_cita']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "100"
+    }, {
+      "id": "d397cb90-2a4e-4050-9e42-a8138fcbb947",
+      "comment": "",
+      "command": "click",
+      "target": "name=verificador",
+      "targets": [
+        ["name=verificador", "name"],
+        ["css=.form-group:nth-child(7) > #cedula", "css:finder"],
+        ["xpath=(//input[@id='cedula'])[2]", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab074534-c050-4822-ae84-42909dc9f9b8",
+      "comment": "",
+      "command": "type",
+      "target": "name=verificador",
+      "targets": [
+        ["name=verificador", "name"],
+        ["css=.form-group:nth-child(7) > #cedula", "css:finder"],
+        ["xpath=(//input[@id='cedula'])[2]", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "Cancelar"
+    }, {
+      "id": "9d17f729-f476-402e-ac76-c2d475f54485",
+      "comment": "",
+      "command": "click",
+      "target": "name=verificar",
+      "targets": [
+        ["name=verificar", "name"],
+        ["css=.btn:nth-child(9)", "css:finder"],
+        ["xpath=//button[@name='verificar']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cancelar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e9c51f0f-2ad0-469f-b310-0a5a7fbead55",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=section",
+      "targets": [],
+      "value": "El número de cita no corresponde al paciente"
+    }]
+  }, {
+    "id": "fd5ff348-c056-4aad-a726-d1e5c1782bed",
+    "name": "CC007 - Campo numero de cita vacío",
+    "commands": [{
+      "id": "791eb4f5-4388-4a8f-8336-fb1c9ecc81d0",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "73d0a78b-2fe5-4ff2-993d-05b149f877fa",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1616x876",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dd560061-82d1-44fc-82d7-25879431d4cb",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Citas Programadas",
+      "targets": [
+        ["linkText=Citas Programadas", "linkText"],
+        ["css=.nav-item:nth-child(2) > #navbarDropdown", "css:finder"],
+        ["xpath=//a[contains(text(),'Citas Programadas')]", "xpath:link"],
+        ["xpath=(//a[@id='navbarDropdown'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "05fcac4c-0b0d-42c8-9946-381bee5080cd",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Cancelar Cita",
+      "targets": [
+        ["linkText=Cancelar Cita", "linkText"],
+        ["css=.show > .dropdown-item:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Cancelar Cita')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[2]/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '?controller=Paciente&action=cancelar')]", "xpath:href"],
+        ["xpath=//li[2]/div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Cancelar Cita')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "712f1ead-2bd1-4903-8adb-9992a4555723",
+      "comment": "",
+      "command": "click",
+      "target": "id=cedula",
+      "targets": [
+        ["id=cedula", "id"],
+        ["name=cedula", "name"],
+        ["css=.form-group:nth-child(3) > #cedula", "css:finder"],
+        ["xpath=//input[@id='cedula']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f633e3ad-6e55-4f67-b276-2dd538963820",
+      "comment": "",
+      "command": "type",
+      "target": "id=cedula",
+      "targets": [
+        ["id=cedula", "id"],
+        ["name=cedula", "name"],
+        ["css=.form-group:nth-child(3) > #cedula", "css:finder"],
+        ["xpath=//input[@id='cedula']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "8-123-1235"
+    }, {
+      "id": "68a89463-9549-4b73-aba2-e083dabf6bbc",
+      "comment": "",
+      "command": "click",
+      "target": "id=fechanac",
+      "targets": [
+        ["id=fechanac", "id"],
+        ["name=fechanac", "name"],
+        ["css=#fechanac", "css:finder"],
+        ["xpath=//input[@id='fechanac']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "15453ab4-6fa2-4b0b-b733-6a75561efd0b",
+      "comment": "",
+      "command": "type",
+      "target": "id=fechanac",
+      "targets": [
+        ["id=fechanac", "id"],
+        ["name=fechanac", "name"],
+        ["css=#fechanac", "css:finder"],
+        ["xpath=//input[@id='fechanac']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "2003-01-05"
+    }, {
+      "id": "c0ae724a-ecd3-4af8-9951-bc551de7b001",
+      "comment": "",
+      "command": "click",
+      "target": "id=numero_cita",
+      "targets": [
+        ["id=numero_cita", "id"],
+        ["name=numero_cita", "name"],
+        ["css=#numero_cita", "css:finder"],
+        ["xpath=//input[@id='numero_cita']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "75659fe4-76de-4a5d-a800-087686c6df67",
+      "comment": "",
+      "command": "click",
+      "target": "name=verificador",
+      "targets": [
+        ["name=verificador", "name"],
+        ["css=.form-group:nth-child(7) > #cedula", "css:finder"],
+        ["xpath=(//input[@id='cedula'])[2]", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f0cb9bfb-f049-41af-98e1-1153fd066e4e",
+      "comment": "",
+      "command": "type",
+      "target": "name=verificador",
+      "targets": [
+        ["name=verificador", "name"],
+        ["css=.form-group:nth-child(7) > #cedula", "css:finder"],
+        ["xpath=(//input[@id='cedula'])[2]", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "Cancelar"
+    }, {
+      "id": "f36e2f60-ed15-431a-9cd5-5cab4d0f922c",
+      "comment": "",
+      "command": "click",
+      "target": "name=verificar",
+      "targets": [
+        ["name=verificar", "name"],
+        ["css=.btn:nth-child(9)", "css:finder"],
+        ["xpath=//button[@name='verificar']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cancelar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7f94c779-b048-472d-a5fd-af95b5c0ecb2",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=section",
+      "targets": [],
+      "value": "El campo numero de cita no puede estar vacío\\nEl número de cita no corresponde al paciente"
+    }]
+  }, {
+    "id": "faba89e1-0dfa-443a-b1e5-e2f322f948ae",
+    "name": "CC008 - Captcha incorrecto",
+    "commands": [{
+      "id": "f1a54ac6-47ec-4e4a-bfbc-fdd47ce8c274",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dd92a0b0-ef77-4b0c-94e4-89ed03784089",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1616x876",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e9100929-2610-43ef-84c4-0d042a1cd73f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Citas Programadas",
+      "targets": [
+        ["linkText=Citas Programadas", "linkText"],
+        ["css=.nav-item:nth-child(2) > #navbarDropdown", "css:finder"],
+        ["xpath=//a[contains(text(),'Citas Programadas')]", "xpath:link"],
+        ["xpath=(//a[@id='navbarDropdown'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "28831c89-9820-440c-a20f-e3ea73e3d42b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Cancelar Cita",
+      "targets": [
+        ["linkText=Cancelar Cita", "linkText"],
+        ["css=.show > .dropdown-item:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Cancelar Cita')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[2]/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '?controller=Paciente&action=cancelar')]", "xpath:href"],
+        ["xpath=//li[2]/div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Cancelar Cita')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "29f8b899-b9f5-4083-ae11-8c47d38797c1",
+      "comment": "",
+      "command": "click",
+      "target": "id=cedula",
+      "targets": [
+        ["id=cedula", "id"],
+        ["name=cedula", "name"],
+        ["css=.form-group:nth-child(3) > #cedula", "css:finder"],
+        ["xpath=//input[@id='cedula']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e61faaec-2eba-498a-a74d-953ed47bde8b",
+      "comment": "",
+      "command": "type",
+      "target": "id=cedula",
+      "targets": [
+        ["id=cedula", "id"],
+        ["name=cedula", "name"],
+        ["css=.form-group:nth-child(3) > #cedula", "css:finder"],
+        ["xpath=//input[@id='cedula']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "8-123-1235"
+    }, {
+      "id": "b3e101bb-8d5b-4cf2-95ae-c039a7d2c6a1",
+      "comment": "",
+      "command": "click",
+      "target": "id=fechanac",
+      "targets": [
+        ["id=fechanac", "id"],
+        ["name=fechanac", "name"],
+        ["css=#fechanac", "css:finder"],
+        ["xpath=//input[@id='fechanac']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "55b4041f-cca2-4dd4-a02d-6b04b85b3a68",
+      "comment": "",
+      "command": "type",
+      "target": "id=fechanac",
+      "targets": [
+        ["id=fechanac", "id"],
+        ["name=fechanac", "name"],
+        ["css=#fechanac", "css:finder"],
+        ["xpath=//input[@id='fechanac']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "2003-01-05"
+    }, {
+      "id": "a17c6d5f-bfaa-4f0e-8725-becc77108fb8",
+      "comment": "",
+      "command": "click",
+      "target": "id=numero_cita",
+      "targets": [
+        ["id=numero_cita", "id"],
+        ["name=numero_cita", "name"],
+        ["css=#numero_cita", "css:finder"],
+        ["xpath=//input[@id='numero_cita']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c6196820-67ef-4f86-94be-87e9fb132456",
+      "comment": "",
+      "command": "type",
+      "target": "id=numero_cita",
+      "targets": [
+        ["id=numero_cita", "id"],
+        ["name=numero_cita", "name"],
+        ["css=#numero_cita", "css:finder"],
+        ["xpath=//input[@id='numero_cita']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "10"
+    }, {
+      "id": "f8a2a757-da2f-4b74-80b6-ac0fb0e1c8e8",
+      "comment": "",
+      "command": "click",
+      "target": "name=verificador",
+      "targets": [
+        ["name=verificador", "name"],
+        ["css=.form-group:nth-child(7) > #cedula", "css:finder"],
+        ["xpath=(//input[@id='cedula'])[2]", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "00dc7d8e-8add-4831-8461-cb1ed4df2ab0",
+      "comment": "",
+      "command": "click",
+      "target": "name=verificar",
+      "targets": [
+        ["name=verificar", "name"],
+        ["css=.btn:nth-child(9)", "css:finder"],
+        ["xpath=//button[@name='verificar']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cancelar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e7b19ea5-cc0d-4b8b-808d-6e8221b837b8",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=section",
+      "targets": [],
+      "value": "El captcha no puede estar vacío"
+    }]
+  }, {
+    "id": "33f7bd12-2ff0-4de6-8e69-9ffedf0f7f47",
+    "name": "CC009 - Captcha vacío",
+    "commands": [{
+      "id": "7ddda1af-b7ee-4635-b9b6-92f13ef5e736",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bb5ca187-84da-4ef6-b6cd-4f38f8e7e309",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1616x876",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4bcf0c3c-15d1-4df6-b9f6-bc7cdc0ebab0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Citas Programadas",
+      "targets": [
+        ["linkText=Citas Programadas", "linkText"],
+        ["css=.nav-item:nth-child(2) > #navbarDropdown", "css:finder"],
+        ["xpath=//a[contains(text(),'Citas Programadas')]", "xpath:link"],
+        ["xpath=(//a[@id='navbarDropdown'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8a5acd54-e4b8-4e04-af85-3d43a8f16ad8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Cancelar Cita",
+      "targets": [
+        ["linkText=Cancelar Cita", "linkText"],
+        ["css=.show > .dropdown-item:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Cancelar Cita')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[2]/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '?controller=Paciente&action=cancelar')]", "xpath:href"],
+        ["xpath=//li[2]/div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Cancelar Cita')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dfb78d32-a45f-43f5-b4f2-332bbfa0a66c",
+      "comment": "",
+      "command": "click",
+      "target": "id=cedula",
+      "targets": [
+        ["id=cedula", "id"],
+        ["name=cedula", "name"],
+        ["css=.form-group:nth-child(3) > #cedula", "css:finder"],
+        ["xpath=//input[@id='cedula']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d533a30c-3e75-41e7-8f9d-ae57543a9c01",
+      "comment": "",
+      "command": "type",
+      "target": "id=cedula",
+      "targets": [
+        ["id=cedula", "id"],
+        ["name=cedula", "name"],
+        ["css=.form-group:nth-child(3) > #cedula", "css:finder"],
+        ["xpath=//input[@id='cedula']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "8-123-1235"
+    }, {
+      "id": "54c5a887-1697-4afc-8b98-68d0ce508ea2",
+      "comment": "",
+      "command": "click",
+      "target": "id=fechanac",
+      "targets": [
+        ["id=fechanac", "id"],
+        ["name=fechanac", "name"],
+        ["css=#fechanac", "css:finder"],
+        ["xpath=//input[@id='fechanac']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "afa4b22f-9c4a-4236-8a37-aadbfc771034",
+      "comment": "",
+      "command": "type",
+      "target": "id=fechanac",
+      "targets": [
+        ["id=fechanac", "id"],
+        ["name=fechanac", "name"],
+        ["css=#fechanac", "css:finder"],
+        ["xpath=//input[@id='fechanac']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "2003-01-05"
+    }, {
+      "id": "a01a948f-414d-4cc1-81b6-ed67ee5202f3",
+      "comment": "",
+      "command": "click",
+      "target": "id=numero_cita",
+      "targets": [
+        ["id=numero_cita", "id"],
+        ["name=numero_cita", "name"],
+        ["css=#numero_cita", "css:finder"],
+        ["xpath=//input[@id='numero_cita']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d3f4302c-d132-44fd-88ce-bdd551c864e9",
+      "comment": "",
+      "command": "type",
+      "target": "id=numero_cita",
+      "targets": [
+        ["id=numero_cita", "id"],
+        ["name=numero_cita", "name"],
+        ["css=#numero_cita", "css:finder"],
+        ["xpath=//input[@id='numero_cita']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "10"
+    }, {
+      "id": "0a601d1d-92f3-4368-8e62-e956210e9037",
+      "comment": "",
+      "command": "click",
+      "target": "name=verificador",
+      "targets": [
+        ["name=verificador", "name"],
+        ["css=.form-group:nth-child(7) > #cedula", "css:finder"],
+        ["xpath=(//input[@id='cedula'])[2]", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "157df911-9c9d-4596-bb25-f46b2924e55f",
+      "comment": "",
+      "command": "type",
+      "target": "name=verificador",
+      "targets": [
+        ["name=verificador", "name"],
+        ["css=.form-group:nth-child(7) > #cedula", "css:finder"],
+        ["xpath=(//input[@id='cedula'])[2]", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "Cancela"
+    }, {
+      "id": "50f016bc-8ea7-4db3-badf-5dd7644bcb62",
+      "comment": "",
+      "command": "click",
+      "target": "name=verificar",
+      "targets": [
+        ["name=verificar", "name"],
+        ["css=.btn:nth-child(9)", "css:finder"],
+        ["xpath=//button[@name='verificar']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cancelar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "49c0ff36-0605-4433-92c8-0c376412ab7f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=section",
+      "targets": [],
+      "value": "Captcha incorrecto"
+    }]
   }],
   "suites": [{
     "id": "4ad3357b-3519-4786-aded-0e934bd8dc1b",
@@ -5903,6 +7567,13 @@
     "parallel": false,
     "timeout": 300,
     "tests": ["789e44b2-4988-47db-9319-f82382ed1660", "289f4d6f-9212-4092-80ec-6a6803c41068", "c2cef144-a542-45de-8d76-5dd6289a9248", "6a6ae76b-c8d8-4cd1-89c8-8b2a7682b250", "50d6107a-96d8-4ab6-bc21-c1c0fc6d4d67", "a58db208-0190-441c-9393-458e229c9e18", "558355c4-b589-4973-ab5d-6a7f00e98ae7", "6efc7dd3-4e30-499d-96a8-23c3be7a6187", "2512d68c-8518-4e1c-b8cf-2f1cf6f5f3c0", "702e76f7-bec4-420b-a9cb-24d4d3120a51"]
+  }, {
+    "id": "f9732aa7-2d71-40ee-aa18-f5df22c4e5ac",
+    "name": "Cancelar Cita Médica",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
   }],
   "urls": ["http://localhost/"],
   "plugins": []

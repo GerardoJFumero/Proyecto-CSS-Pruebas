@@ -46,9 +46,13 @@ class PacienteModel
         $consulta = $this->db->query("SELECT count(*) as contador from paciente where cedula = '" . $cedula . "' and fechanac = '" . $fechanac . "';"  );
         //Puntero que permiten verificar la existencia de información en la BDD
         $existe = $consulta->fetch_assoc();
-        if (($existe['contador'] > 0)) {
+        switch ($existe) {
+
+            case ($existe['contador'] > 0):
             return true;
-        } else {
+            break;
+
+            case ($existe['contador'] = 0):
             return false;
         }
     }

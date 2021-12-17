@@ -21,24 +21,24 @@
             <div class="form-group">
                 <label>Número de Cédula</label>
                 <input type="text" class="form-control" id="cedula" name="cedula"
-                    placeholder="Ingrese su número de Cédula (X-XXX-XXXX)" required>
+                    placeholder="Ingrese su número de Cédula (X-XXX-XXXX)">
                 <small id="emailHelp" class="form-text text-muted">Esta información no será compartida con
                     nadie.</small>
             </div>
             <div class="form-group">
                 <label>Fecha de nacimiento</label>
-                <input type="date" class="form-control" id="fechanac" name="fechanac" placeholder="" required>
+                <input type="date" class="form-control" id="fechanac" name="fechanac" placeholder="">
             </div>
             <div class="form-group">
                 <label>Número de cita</label>
                 <input type="number" class="form-control" id="numero_cita" name="numero_cita"
-                    placeholder="Ingrese su número de cita" required>
+                    placeholder="Ingrese su número de cita">
             </div>
             <hr>
             <div class="form-group">
                 <label style="color: #DC143C;">Escribe "Cancelar" y presiona el botón para confirmar esta acción.</label>
                 <input type="text" class="form-control" id="cedula" name="verificador"
-                    placeholder="" required>
+                    placeholder="">
             </div>
             <p style="color: #ff7300;">⚠ ATENCIÓN, Esta acción no se puede revertir.</p>
             <button type="submit" name="verificar" value="verificar" class="btn" style="background-color: #DC143C; color: white;">Cancelar</button>

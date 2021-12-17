@@ -320,72 +320,70 @@ class PacienteController
             if(empty($_POST['cedula'])){
                 echo "El campo cédula no puede estar vacío";
             } else{
-                $cedula=$_POST['cedula'];
             }        
             //Se debe verificar todos los datos no estén vacíos
-            if(empty($_POST['fechanac'])){
-                echo "El campo fecha de nacimiento no puede estar vacío";
-            } else{
-                $fechanac=$_POST['fechanac'];
-            }
-
             if(empty($_POST['numero_cita'])){
-                echo "El campo fecha de nacimiento no puede estar vacío";
+                echo "<br>";
+                echo 'El campo numero de cita no puede estar vacío'.'<br>';
+
             } else{
                 $numero_cita=$_POST['numero_cita'];
             }
 
-            $verificador=$_POST['verificador'];
+            if(empty($_POST['verificador'])){
+                echo "El captcha no puede estar vacío";
+                echo "<br>";
+            } else{
+                $verificador=$_POST['verificador'];
+                switch ($verificador){
 
-            switch ($verificador){
-
-                case ("Cancelar"||"cancelar"): 
-
-                    $paciente= new PacienteModel();
-                    $existe_paciente = $paciente->verificarPaciente($cedula);
-                    //Se debe verificar que el paciente y la cédula correspondan en la BDD
-                    if ($existe_paciente==true){
-
+                    case (($verificador=="Cancelar")||($verificador=="cancelar")): 
+    
                         $paciente= new PacienteModel();
-                        $coinciden = $paciente->verificarDatosPaciente(($cedula), ($fechanac));
-                        
-                            if ($coinciden==true){
-
-                                //Ahora se verifica que el número de cita corresponda a ese paciente
-                                $paciente= new PacienteModel();
-                                $datos_correctos = $paciente->verificarDatosCita($cedula, $numero_cita);
-
-                                    if ($datos_correctos==false){
-                                        echo "El número de cita no corresponde al paciente";
-                                    } else {
-                                        $paciente= new PacienteModel();
-                                        $datos_correctos = $paciente->cancelarCita($numero_cita);
-                                        require_once('Views/Paciente/cita-cancelada.php');
-                                    }
-                            }else{
-                                echo "La fecha de nacimiento no correponde al paciente";
+                        $cedula=$_POST['cedula'];
+                        $existe_paciente = $paciente->verificarPaciente($cedula);
+                        //Se debe verificar que el paciente y la cédula correspondan en la BDD
+                        if ($existe_paciente==true){
+                            
+                            if (empty($_POST['fechanac'])){
+                                echo "El campo fecha de nacimiento no puede estar vacío";
+                            } else{
+                                $fechanac=$_POST['fechanac'];
                             }
-                    } else{
-                        echo "La cedula no se encuentra registrada";
-                    }
-
-
-                    $paciente= new PacienteModel();
-                    $datos_correctos = $paciente->verificarDatosCita($cedula, $fechanac, $numero_cita);
-                        if($datos_correctos){
                             $paciente= new PacienteModel();
-                            $datos_correctos = $paciente->cancelarCita($numero_cita);
-                            require_once('Views/Paciente/cita-cancelada.php');
-                        } else{
-                            include_once('Views/Error/error-datos-incorrectos.php');
+                            $coinciden = $paciente->verificarDatosPaciente(($cedula), ($fechanac));
+                            
+                                if ($coinciden==true){
+    
+                                    //Ahora se verifica que el número de cita corresponda a ese paciente
+                                    $paciente= new PacienteModel();
+                                    $datos_correctos = $paciente->verificarDatosCita($cedula, $numero_cita);
+    
+                                        if ($datos_correctos==false){
+                                            echo "El número de cita no corresponde al paciente";
+                                        } else {
+                                            $paciente= new PacienteModel();
+                                            $datos_correctos = $paciente->cancelarCita($numero_cita);
+                                            if($datos_correctos==true){
+                                                require_once('Views/Paciente/cita-cancelada.php');
+                                            } else{
+                                                echo "Solicitud fallida";
+                                            }
+                                            
+                                        }
+                                }else{
+                                    echo "La fecha de nacimiento no correponde al paciente";
+                                }
+                        }else{
+                            echo "La cédula no se encuentra registrada";
                         }
                     break;
-                default:
-                include_once('Views/Error/error-cancelar.php');
+                    
+                    default:
+                        echo "Captcha incorrecto";
+                }
             }
-
-            }
-    
+        }
     }
 
 }
