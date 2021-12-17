@@ -1,0 +1,784 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40"
+xmlns:ns1="http://schemas.microsoft.com/office/infopath/2003">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="ProgId" content="Word.Document" />
+    <meta name="Generator" content="SpiraTeam" />
+    <meta name="Originator" content="SpiraTeam" />
+    <title></title>
+    <!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+ 	<o:Title>Test Case Detailed Report</o:Title>
+  <o:Subject>Test Case Detailed Report</o:Subject>
+ </o:DocumentProperties>
+</xml><![endif]-->
+    <!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:View>Print</w:View>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:DontUseIndentAsNumberingTabStop/>
+   <w:FELineBreak11/>
+   <w:WW11IndentRules/>
+   <w:DontAutofitConstrainedTables/>
+   <w:AutofitLikeWW11/>
+   <w:UnderlineTabInNumList/>
+   <w:HangulWidthLikeWW11/>
+   <w:UseNormalStyleForList/>
+   <w:DontVertAlignCellWithSp/>
+   <w:DontBreakConstrainedForcedTables/>
+   <w:DontVertAlignInTxbx/>
+   <w:Word11KerningPairs/>
+   <w:CachedColBalance/>
+  </w:Compatibility>
+  <w:DoNotOptimizeForBrowser/>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]-->
+    <!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"
+  DefSemiHidden="true" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="267">
+  <w:LsdException Locked="false" Priority="0" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 9"/>
+  <w:LsdException Locked="false" Priority="35" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" Priority="10" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" Priority="11" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" Priority="22" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" Priority="59" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Table Grid"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+    <style type="text/css">
+      /* Custom Styles */
+      BODY.Reports
+      {
+      font-size: 10pt;
+      font-family: Arial, Helvetica, Sans-Serif;
+      font-weight: normal;
+      }
+      BODY.Reports .Title1
+      {
+      font-weight: bold;
+      font-size: 16pt;
+      text-align: left;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      mso-outline-level:1;
+      }
+      BODY.Reports .Title2
+      {
+      font-weight: bold;
+      font-size: 14pt;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      mso-outline-level:2;
+      }
+      BODY.Reports .Title3
+      {
+      font-weight: bold;
+      font-size: 12pt;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      font-style: italic;
+      mso-outline-level:3;
+      }
+      BODY.Reports .Title4
+      {
+      font-weight: bold;
+      font-size: 10pt;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      text-decoration: underline;
+      mso-outline-level:4;
+      }
+
+      BODY.Reports .HiddenTable
+      {
+      border: none;
+      border-collapse: collapse;
+      width: 100%;
+      font-size: 10pt;
+      font-family: Arial, Helvetica, Sans-Serif;
+      }
+      BODY.Reports .HiddenTable TR
+      {
+      border: none;
+      }
+      BODY.Reports .HiddenTable TD
+      {
+      border: none;
+      }
+      BODY.Reports .HiddenTable TH
+      {
+      font-weight: bold;
+      text-align: left;
+      border: none;
+      }
+      BODY.Reports .DataGrid
+      {
+      margin: 10px;
+      border-collapse: collapse;
+      font-family: Arial;
+      font-size: 10pt;
+      font-weight: normal;
+      color: Black;
+      border: 1px solid Silver;
+      background-color: White;
+      width: 100%;
+      }
+      BODY.Reports .DataGrid TD
+      {
+      padding-left: 5px;
+      padding-right: 5px;
+      padding-top: 2px;
+      padding-bottom: 2px;
+      border: 1px solid Silver;
+      border-collapse: collapse;
+      font-size: 10pt;
+      font-weight: normal;
+      }
+      BODY.Reports .DataGrid TH
+      {
+      text-align: left;
+      background-color: #e0e0e0;
+      white-space: nowrap;
+      font-weight: bold;
+      border: 1px solid Silver;
+      border-collapse: collapse;
+      }
+      BODY.Reports .DataGrid .ItalicRow TD
+      {
+      font-style: italic;
+      }
+      BODY.Reports .DataGrid .BoldRow TD
+      {
+      font-weight: bold;
+      }
+      BODY.Reports .DataGrid .SmallRow TD
+      {
+      font-size: 8pt;
+      }
+      BODY.Reports .DataGrid .SmallItalicRow TD
+      {
+      font-size: 8pt;
+      font-style: italic;
+      }
+      BODY.Reports img
+      {
+      width: 300px;
+      }
+      BODY.Reports TD img
+      {
+      width: 50px;
+      }
+      img
+      {
+      max-width: 90% !important;
+      height: auto !important;
+      }
+      .DataGrid TD img
+      {
+      max-width: 200px !important;
+      }
+      <!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:1;
+	font-size:16.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Arial","sans-serif";
+	mso-font-kerning:16.0pt;
+	mso-bidi-font-weight:normal;}
+h2
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:14.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Arial","sans-serif";
+	mso-font-kerning:14.0pt;
+	mso-bidi-font-weight:normal;
+	font-style:italic;
+	mso-bidi-font-style:normal;}
+h3
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:3;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Arial","sans-serif";
+	mso-font-kerning:12.0pt;
+	mso-bidi-font-weight:normal;
+	text-decoration:underline;
+	text-underline:single;}
+h4
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:4;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";
+	mso-font-kerning:10.0pt;
+	mso-bidi-font-weight:normal;
+	text-decoration:underline;
+	text-underline:single;}
+a:link, span.MsoHyperlink
+	{mso-style-unhide:no;
+	mso-style-parent:"";
+	color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:purple;
+	mso-themecolor:followedhyperlink;
+	text-decoration:underline;
+	text-underline:single;}
+p.BoldText, li.BoldText, div.BoldText
+	{mso-style-name:"Bold Text";
+	mso-style-unhide:no;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";
+	mso-fareast-font-family:"Times New Roman";
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;}
+ /* Page Definitions */
+ @page
+	{mso-footnote-separator: fs;
+	mso-footnote-continuation-separator: fcs;
+	mso-endnote-separator: es;
+	mso-endnote-continuation-separator: ecs;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-header:h1;
+	mso-footer:f1;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:477262351;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1617876152 -1 1446139186 564854154 1168830080 1053432808 22680240 720796604 1875523612 151953210;}
+@list l0:level1
+	{mso-level-text:l;
+	mso-level-tab-stop:.75in;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.5in;
+	font-family:Wingdings;}
+@list l0:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:l;
+	mso-level-tab-stop:1.25in;
+	mso-level-number-position:left;
+	margin-left:1.25in;
+	text-indent:-.5in;
+	font-family:Wingdings;}
+@list l0:level3
+	{mso-level-start-at:0;
+	mso-level-text:"";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:0in;}
+@list l0:level4
+	{mso-level-start-at:0;
+	mso-level-text:"";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:0in;}
+@list l0:level5
+	{mso-level-start-at:0;
+	mso-level-text:"";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:0in;}
+@list l0:level6
+	{mso-level-start-at:0;
+	mso-level-text:"";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:0in;}
+@list l0:level7
+	{mso-level-start-at:0;
+	mso-level-text:"";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:0in;}
+@list l0:level8
+	{mso-level-start-at:0;
+	mso-level-text:"";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:0in;}
+@list l0:level9
+	{mso-level-start-at:0;
+	mso-level-text:"";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:0in;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+    </style>
+    <!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";}
+table.NoBorderTable
+	{mso-style-name:"No Border Table";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	border:solid white 1.0pt;
+	mso-border-alt:solid white .5pt;
+	mso-padding-alt:0in 0in 0in 0in;
+	mso-border-insideh:.5pt solid white;
+	mso-border-insidev:.5pt solid white;
+	mso-para-margin-top:2.0pt;
+	mso-para-margin-right:.1in;
+	mso-para-margin-bottom:2.0pt;
+	mso-para-margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";}
+table.DataGrid
+	{mso-style-name:"Data Grid";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	border:solid #999999 1.0pt;
+	mso-border-alt:solid #999999 .5pt;
+	mso-padding-alt:0in 0in 0in 0in;
+	mso-border-insideh:.5pt solid #999999;
+	mso-border-insidev:.5pt solid #999999;
+	mso-para-margin-top:2.0pt;
+	mso-para-margin-right:.1in;
+	mso-para-margin-bottom:2.0pt;
+	mso-para-margin-left:.1in;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";}
+table.DataGridFirstRow
+	{mso-style-name:"Data Grid";
+	mso-table-condition:first-row;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	mso-tstyle-shading:silver;}
+</style>
+<![endif]-->
+    <!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1026"/>
+</xml><![endif]-->
+    <!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+  </head>
+  <body class="Reports">
+    <div class="WordSection1">
+      <h1>
+        Test Case Detailed Report
+      </h1>
+      <div><p>This report displays all of the test cases defined for the current project in the order they appear in the test case list. The test case's details and execution status are displayed, along with sub-tables containing the list of test steps, test runs, attached documents, the change history, and a list of any associated open incidents</p></div><div class="Title1">Product24:Sitio Web - Caja del Seguro Social</div><p></p><div class="Title2">Folder:Root</div><div class="Description"></div><div class="Title2">Folder:Casos de pruebas comunes</div><div class="Description"></div><div class="Title3">Test TC:290-Ingresar al sitio web</div><div class="Description"></div><table class="HiddenTable"><tr><th>Execution Status:</th><td>Not Run</td><th>Priority:</th><td></td></tr><tr><th>Type:</th><td>Functional</td><th>Status:</th><td>Draft</td></tr><tr><th>Author:</th><td>System Administrator</td><th>Creation Date:</th><td class="Date">15-Dec-2021 </td></tr><tr><th>Owner:</th><td></td><th>Last Execution:</th><td class="Date">-- </td></tr><tr><th>Automation Engine:</th><td></td><th>Last Updated:</th><td class="Date">15-Dec-2021 </td></tr><tr><th>Component(s):</th><td colspan="3"></td></tr></table><table class="DataGrid"><tr><th>Step</th><th>Description</th><th>Expected Result</th><th>Sample Data</th><th>Last Status</th></tr><tr><td>1</td><td><p>Abrir navegador web e ingresar la url del sitio web</p></td><td><p>El navegador web carga el sitio web y presenta la pantalla de inicio</p></td><td><p>${localhost]</p></td><td>Passed</td></tr></table><br><br><div class="Title2">Folder:Pruebas funcionales</div><div class="Description"></div><div class="Title2">Folder:Agendar cita médica</div><div class="Description"></div><div class="Title3">Test TC:317-CP001 - Flujo Basico</div><div class="Description"></div><table class="HiddenTable"><tr><th>Execution Status:</th><td>Passed</td><th>Priority:</th><td></td></tr><tr><th>Type:</th><td>Functional</td><th>Status:</th><td>Draft</td></tr><tr><th>Author:</th><td>System Administrator</td><th>Creation Date:</th><td class="Date">15-Dec-2021 </td></tr><tr><th>Owner:</th><td></td><th>Last Execution:</th><td class="Date">17-Dec-2021 </td></tr><tr><th>Automation Engine:</th><td></td><th>Last Updated:</th><td class="Date">16-Dec-2021 </td></tr><tr><th>Component(s):</th><td colspan="3"></td></tr></table><table class="DataGrid"><tr><th>Step</th><th>Description</th><th>Expected Result</th><th>Sample Data</th><th>Last Status</th></tr><tr><td>1</td><td colspan="3">Call'Ingresar al sitio web'<i>withurl= 'localhost',</i></td><td>N/A</td></tr><tr><td>2</td><td><p>Selecciona la opción “paciente registrado" que se despliega del botón “Programar cita médica”</p></td><td><p>Se muestran los campos “Numero de cedula”, “Fecha de Nacimiento”, “Correo”, “Teléfono”, “Policlínica” y “Especialidad”</p></td><td></td><td>Passed</td></tr><tr><td>3</td><td><p>Ingresar los datos en los campos</p></td><td><p>Los datos pueden ingresarse</p></td><td><p>Cédula = 8-123-1235<br>Fecha de nacimiento = 1/5/2003<br>Correo = sofia@gmail.com<br>Teléfono = 66099918<br>Policlínica = Complejo Hospitalario Arnulfo Arias<br>Especialidad = Neurología</p></td><td>Passed</td></tr><tr><td>4</td><td><p>Selecciona la opción “Enviar Solicitud”</p></td><td><p>Se muestra en pantalla el mensaje “<span style="background-color:hsl(0,0%,100%);color:hsl(0,0%,0%);font-size:16px;">¡Cita Agendada!</span>”, el número de cita y la fecha de la cita.</p></td><td></td><td>Passed</td></tr></table><br><br><div class="Title3">Test TC:319-CP002 - Cédula no registrada: "Cédula" </div><div class="Description"></div><table class="HiddenTable"><tr><th>Execution Status:</th><td>Passed</td><th>Priority:</th><td></td></tr><tr><th>Type:</th><td>Functional</td><th>Status:</th><td>Draft</td></tr><tr><th>Author:</th><td>System Administrator</td><th>Creation Date:</th><td class="Date">15-Dec-2021 </td></tr><tr><th>Owner:</th><td></td><th>Last Execution:</th><td class="Date">17-Dec-2021 </td></tr><tr><th>Automation Engine:</th><td></td><th>Last Updated:</th><td class="Date">16-Dec-2021 </td></tr><tr><th>Component(s):</th><td colspan="3"></td></tr></table><table class="DataGrid"><tr><th>Step</th><th>Description</th><th>Expected Result</th><th>Sample Data</th><th>Last Status</th></tr><tr><td>1</td><td colspan="3">Call'Ingresar al sitio web'<i>withurl= 'localhost',</i></td><td>N/A</td></tr><tr><td>2</td><td><p>Selecciona la opción “paciente registrado" que se despliega del botón “Programar cita médica”</p></td><td><p>Se muestran los campos “Numero de cedula”, “Fecha de Nacimiento”, “Correo”, “Teléfono”, “Policlínica” y “Especialidad”</p></td><td></td><td>Passed</td></tr><tr><td>3</td><td><p>Ingresar los datos en los campos</p></td><td><p>Los datos pueden ingresarse</p></td><td><p>Cédula = 8-123-1234<br>Fecha de nacimiento = 1/5/2003<br>Correo = sofia@gmail.com<br>Teléfono = 66099918<br>Policlínica = Complejo Hospitalario Arnulfo Arias<br>Especialidad = Neurología</p></td><td>Passed</td></tr><tr><td>4</td><td><p>Selecciona la opción “Enviar Solicitud”</p></td><td><p>Se muestra en pantalla el mensaje “La cédula no corresponde a ningún paciente”</p></td><td></td><td>Passed</td></tr></table><br><br><div class="Title3">Test TC:320-CP003 - Campo vacío: "Cédula"</div><div class="Description"></div><table class="HiddenTable"><tr><th>Execution Status:</th><td>Passed</td><th>Priority:</th><td></td></tr><tr><th>Type:</th><td>Functional</td><th>Status:</th><td>Draft</td></tr><tr><th>Author:</th><td>System Administrator</td><th>Creation Date:</th><td class="Date">15-Dec-2021 </td></tr><tr><th>Owner:</th><td></td><th>Last Execution:</th><td class="Date">17-Dec-2021 </td></tr><tr><th>Automation Engine:</th><td></td><th>Last Updated:</th><td class="Date">16-Dec-2021 </td></tr><tr><th>Component(s):</th><td colspan="3"></td></tr></table><table class="DataGrid"><tr><th>Step</th><th>Description</th><th>Expected Result</th><th>Sample Data</th><th>Last Status</th></tr><tr><td>1</td><td colspan="3">Call'Ingresar al sitio web'<i>withurl= 'localhost',</i></td><td>N/A</td></tr><tr><td>2</td><td><p>Selecciona la opción “paciente registrado" que se despliega del botón “Programar cita médica”</p></td><td><p>Se muestran los campos “Numero de cedula”, “Fecha de Nacimiento”, “Correo”, “Teléfono”, “Policlínica” y “Especialidad”</p></td><td></td><td>Passed</td></tr><tr><td>3</td><td><p>Ingresar los datos en los campos</p></td><td><p>Los datos pueden ingresarse</p></td><td><p>Cédula =&nbsp;<br>Fecha de nacimiento = 1/5/2003<br>Correo = sofia@gmail.com<br>Teléfono = 66099918<br>Policlínica = Complejo Hospitalario Arnulfo Arias<br>Especialidad = Neurología</p></td><td>Passed</td></tr><tr><td>4</td><td><p>Selecciona la opción “Enviar Solicitud”</p></td><td><p>Se muestra en pantalla el mensaje “El campo cédula no puede estar vacío”</p></td><td></td><td>Passed</td></tr></table><br><br><div class="Title3">Test TC:323-CP004 - No coincide con cédula registrada: "Fecha"</div><div class="Description"></div><table class="HiddenTable"><tr><th>Execution Status:</th><td>Passed</td><th>Priority:</th><td></td></tr><tr><th>Type:</th><td>Functional</td><th>Status:</th><td>Draft</td></tr><tr><th>Author:</th><td>System Administrator</td><th>Creation Date:</th><td class="Date">15-Dec-2021 </td></tr><tr><th>Owner:</th><td></td><th>Last Execution:</th><td class="Date">17-Dec-2021 </td></tr><tr><th>Automation Engine:</th><td></td><th>Last Updated:</th><td class="Date">17-Dec-2021 </td></tr><tr><th>Component(s):</th><td colspan="3"></td></tr></table><table class="DataGrid"><tr><th>Step</th><th>Description</th><th>Expected Result</th><th>Sample Data</th><th>Last Status</th></tr><tr><td>1</td><td colspan="3">Call'Ingresar al sitio web'<i>withurl= 'localhost',</i></td><td>N/A</td></tr><tr><td>2</td><td><p>Selecciona la opción “paciente registrado" que se despliega del botón “Programar cita médica”</p></td><td><p>Se muestran los campos “Numero de cedula”, “Fecha de Nacimiento”, “Correo”, “Teléfono”, “Policlínica” y “Especialidad”</p></td><td></td><td>Passed</td></tr><tr><td>3</td><td><p>Ingresar los datos en los campos</p></td><td><p>Los datos pueden ingresarse</p></td><td><p>Cédula = 8-123-1235<br>Fecha de nacimiento =&nbsp;1/3/2003<br>Correo = sofia@gmail.com<br>Teléfono = 66099918<br>Policlínica = Complejo Hospitalario Arnulfo Arias<br>Especialidad = Neurología</p></td><td>Passed</td></tr><tr><td>4</td><td><p>Selecciona la opción “Enviar Solicitud”</p></td><td><p>Se muestra en pantalla el mensaje "La fecha de nacimiento no corresponde al paciente”</p></td><td></td><td>Passed</td></tr></table><br><br><div class="Title3">Test TC:321-CP005 - Campo vacío: "Fecha"</div><div class="Description"></div><table class="HiddenTable"><tr><th>Execution Status:</th><td>Passed</td><th>Priority:</th><td></td></tr><tr><th>Type:</th><td>Functional</td><th>Status:</th><td>Draft</td></tr><tr><th>Author:</th><td>System Administrator</td><th>Creation Date:</th><td class="Date">15-Dec-2021 </td></tr><tr><th>Owner:</th><td></td><th>Last Execution:</th><td class="Date">17-Dec-2021 </td></tr><tr><th>Automation Engine:</th><td></td><th>Last Updated:</th><td class="Date">16-Dec-2021 </td></tr><tr><th>Component(s):</th><td colspan="3"></td></tr></table><table class="DataGrid"><tr><th>Step</th><th>Description</th><th>Expected Result</th><th>Sample Data</th><th>Last Status</th></tr><tr><td>1</td><td colspan="3">Call'Ingresar al sitio web'<i>withurl= 'localhost',</i></td><td>N/A</td></tr><tr><td>2</td><td><p>Selecciona la opción “paciente registrado" que se despliega del botón “Programar cita médica”</p></td><td><p>Se muestran los campos “Numero de cedula”, “Fecha de Nacimiento”, “Correo”, “Teléfono”, “Policlínica” y “Especialidad”</p></td><td></td><td>Passed</td></tr><tr><td>3</td><td><p>Ingresar los datos en los campos</p></td><td><p>Los datos pueden ingresarse</p></td><td><p>Cédula =&nbsp;8-123-1235<br>Fecha de nacimiento =&nbsp;<br>Correo = sofia@gmail.com<br>Teléfono = 66099918<br>Policlínica = Complejo Hospitalario Arnulfo Arias<br>Especialidad = Neurología</p></td><td>Passed</td></tr><tr><td>4</td><td><p>Selecciona la opción “Enviar Solicitud”</p></td><td><p>Se muestra en pantalla el mensaje “El campo fecha de nacimiento no puede estar vacío”</p></td><td></td><td>Passed</td></tr></table><br><br><div class="Title3">Test TC:324-CP006 - No tiene el formato: "Correo" </div><div class="Description"></div><table class="HiddenTable"><tr><th>Execution Status:</th><td>Passed</td><th>Priority:</th><td></td></tr><tr><th>Type:</th><td>Functional</td><th>Status:</th><td>Draft</td></tr><tr><th>Author:</th><td>System Administrator</td><th>Creation Date:</th><td class="Date">15-Dec-2021 </td></tr><tr><th>Owner:</th><td></td><th>Last Execution:</th><td class="Date">17-Dec-2021 </td></tr><tr><th>Automation Engine:</th><td></td><th>Last Updated:</th><td class="Date">16-Dec-2021 </td></tr><tr><th>Component(s):</th><td colspan="3"></td></tr></table><table class="DataGrid"><tr><th>Step</th><th>Description</th><th>Expected Result</th><th>Sample Data</th><th>Last Status</th></tr><tr><td>1</td><td colspan="3">Call'Ingresar al sitio web'<i>withurl= 'localhost',</i></td><td>N/A</td></tr><tr><td>2</td><td><p>Selecciona la opción “paciente registrado" que se despliega del botón “Programar cita médica”</p></td><td><p>Se muestran los campos “Numero de cedula”, “Fecha de Nacimiento”, “Correo”, “Teléfono”, “Policlínica” y “Especialidad”</p></td><td></td><td>Passed</td></tr><tr><td>3</td><td><p>Ingresar los datos en los campos</p></td><td><p>Los datos pueden ingresarse</p></td><td><p>Cédula = 8-123-1235<br>Fecha de nacimiento =&nbsp;1/5/2003<br>Correo = sofia@gmail<br>Teléfono = 66099918<br>Policlínica = Complejo Hospitalario Arnulfo Arias<br>Especialidad = Neurología</p></td><td>Passed</td></tr><tr><td>4</td><td><p>Selecciona la opción “Enviar Solicitud”</p></td><td><p>Se muestra en pantalla el mensaje "El formato del correo no es válido”</p></td><td></td><td>Passed</td></tr></table><br><br><div class="Title3">Test TC:325-CP007 - Campo vacío: "Correo"</div><div class="Description"></div><table class="HiddenTable"><tr><th>Execution Status:</th><td>Passed</td><th>Priority:</th><td></td></tr><tr><th>Type:</th><td>Functional</td><th>Status:</th><td>Draft</td></tr><tr><th>Author:</th><td>System Administrator</td><th>Creation Date:</th><td class="Date">15-Dec-2021 </td></tr><tr><th>Owner:</th><td></td><th>Last Execution:</th><td class="Date">17-Dec-2021 </td></tr><tr><th>Automation Engine:</th><td></td><th>Last Updated:</th><td class="Date">16-Dec-2021 </td></tr><tr><th>Component(s):</th><td colspan="3"></td></tr></table><table class="DataGrid"><tr><th>Step</th><th>Description</th><th>Expected Result</th><th>Sample Data</th><th>Last Status</th></tr><tr><td>1</td><td colspan="3">Call'Ingresar al sitio web'<i>withurl= 'localhost',</i></td><td>N/A</td></tr><tr><td>2</td><td><p>Selecciona la opción “paciente registrado" que se despliega del botón “Programar cita médica”</p></td><td><p>Se muestran los campos “Numero de cedula”, “Fecha de Nacimiento”, “Correo”, “Teléfono”, “Policlínica” y “Especialidad”</p></td><td></td><td>Passed</td></tr><tr><td>3</td><td><p>Ingresar los datos en los campos</p></td><td><p>Los datos pueden ingresar</p></td><td><p>Cédula = 8-123-1235&nbsp;</p><p>@Fecha de nacimiento = 1/5/2003&nbsp;</p><p>@Correo = @ Teléfono = 66099918 @ Policlínica = Complejo Hospitalario Arnulfo Arias &nbsp;&nbsp;<br>Especialidad = Neurología</p></td><td>Passed</td></tr><tr><td>4</td><td><p>Selecciona la opción “Enviar Solicitud”</p></td><td><p>Se muestra en pantalla el mensaje "El campo correo no puede estar vacío”</p></td><td></td><td>Passed</td></tr></table><br><br><div class="Title3">Test TC:326-CP008 - Menor a 6 valores: "Teléfono" </div><div class="Description"></div><table class="HiddenTable"><tr><th>Execution Status:</th><td>Passed</td><th>Priority:</th><td></td></tr><tr><th>Type:</th><td>Functional</td><th>Status:</th><td>Draft</td></tr><tr><th>Author:</th><td>System Administrator</td><th>Creation Date:</th><td class="Date">15-Dec-2021 </td></tr><tr><th>Owner:</th><td></td><th>Last Execution:</th><td class="Date">17-Dec-2021 </td></tr><tr><th>Automation Engine:</th><td></td><th>Last Updated:</th><td class="Date">16-Dec-2021 </td></tr><tr><th>Component(s):</th><td colspan="3"></td></tr></table><table class="DataGrid"><tr><th>Step</th><th>Description</th><th>Expected Result</th><th>Sample Data</th><th>Last Status</th></tr><tr><td>1</td><td colspan="3">Call'Ingresar al sitio web'<i>withurl= 'localhost',</i></td><td>N/A</td></tr><tr><td>2</td><td><p>Selecciona la opción “paciente registrado" que se despliega del botón “Programar cita médica”</p></td><td><p>Se muestran los campos “Numero de cedula”, “Fecha de Nacimiento”, “Correo”, “Teléfono”, “Policlínica” y “Especialidad”</p></td><td></td><td>Passed</td></tr><tr><td>3</td><td><p>Ingresar los datos en los campos</p></td><td><p>Los datos pueden ingresarse</p></td><td><p>Cédula = 8-123-1235<br>Fecha de nacimiento =&nbsp;1/5/2003<br>Correo =&nbsp;sofia@gmail.com<br>Teléfono = 660999<br>Policlínica = Complejo Hospitalario Arnulfo Arias<br>Especialidad = Neurología</p></td><td>Passed</td></tr><tr><td>4</td><td><p>Selecciona la opción “Enviar Solicitud”</p></td><td><p>Se muestra en pantalla el mensaje "El campo número debe tener de 6 a 9 caracteres numéricos”</p></td><td></td><td>Passed</td></tr></table><br><br><div class="Title3">Test TC:336-CP009 - Mayor a 9 valores: "Teléfono" </div><div class="Description"></div><table class="HiddenTable"><tr><th>Execution Status:</th><td>Passed</td><th>Priority:</th><td></td></tr><tr><th>Type:</th><td>Functional</td><th>Status:</th><td>Draft</td></tr><tr><th>Author:</th><td>System Administrator</td><th>Creation Date:</th><td class="Date">15-Dec-2021 </td></tr><tr><th>Owner:</th><td></td><th>Last Execution:</th><td class="Date">17-Dec-2021 </td></tr><tr><th>Automation Engine:</th><td></td><th>Last Updated:</th><td class="Date">16-Dec-2021 </td></tr><tr><th>Component(s):</th><td colspan="3"></td></tr></table><table class="DataGrid"><tr><th>Step</th><th>Description</th><th>Expected Result</th><th>Sample Data</th><th>Last Status</th></tr><tr><td>1</td><td colspan="3">Call'Ingresar al sitio web'<i>withurl= 'localhost',</i></td><td>N/A</td></tr><tr><td>2</td><td><p>Selecciona la opción “paciente registrado" que se despliega del botón “Programar cita médica”</p></td><td><p>Se muestran los campos “Numero de cedula”, “Fecha de Nacimiento”, “Correo”, “Teléfono”, “Policlínica” y “Especialidad”</p></td><td></td><td>Passed</td></tr><tr><td>3</td><td><p>Ingresar los datos en los campos</p></td><td><p>Los datos pueden ingresarse</p></td><td><p>Cédula = 8-123-1235<br>Fecha de nacimiento =&nbsp;1/5/2003<br>Correo =&nbsp;sofia@gmail.com<br>Teléfono = 660998800<br>Policlínica = Complejo Hospitalario Arnulfo Arias<br>Especialidad = Neurología</p></td><td>Passed</td></tr><tr><td>4</td><td><p>Selecciona la opción “Enviar Solicitud”</p></td><td><p>Se muestra en pantalla el mensaje "El campo teléfono debe tener de 6 a 9 caracteres numéricos”</p></td><td></td><td>Passed</td></tr></table><br><br><div class="Title3">Test TC:327-CP010 - Campo vacío: "Teléfono"</div><div class="Description"></div><table class="HiddenTable"><tr><th>Execution Status:</th><td>Passed</td><th>Priority:</th><td></td></tr><tr><th>Type:</th><td>Functional</td><th>Status:</th><td>Draft</td></tr><tr><th>Author:</th><td>System Administrator</td><th>Creation Date:</th><td class="Date">15-Dec-2021 </td></tr><tr><th>Owner:</th><td></td><th>Last Execution:</th><td class="Date">17-Dec-2021 </td></tr><tr><th>Automation Engine:</th><td></td><th>Last Updated:</th><td class="Date">16-Dec-2021 </td></tr><tr><th>Component(s):</th><td colspan="3"></td></tr></table><table class="DataGrid"><tr><th>Step</th><th>Description</th><th>Expected Result</th><th>Sample Data</th><th>Last Status</th></tr><tr><td>1</td><td colspan="3">Call'Ingresar al sitio web'<i>withurl= 'localhost',</i></td><td>N/A</td></tr><tr><td>2</td><td><p>Selecciona la opción “paciente registrado" que se despliega del botón “Programar cita médica”</p></td><td><p>Se muestran los campos “Numero de cedula”, “Fecha de Nacimiento”, “Correo”, “Teléfono”, “Policlínica” y “Especialidad”</p></td><td></td><td>Passed</td></tr><tr><td>3</td><td><p>Ingresar los datos en los campos</p></td><td><p>Los datos pueden ingresarse</p></td><td><p>Cédula = 8-123-1235<br>Fecha de nacimiento =&nbsp;1/5/2003<br>Correo =&nbsp;sofia@gmail.com<br>Teléfono =&nbsp;<br>Policlínica = Complejo Hospitalario Arnulfo Arias<br>Especialidad = Neurología</p></td><td>Passed</td></tr><tr><td>4</td><td><p>Selecciona la opción “Enviar Solicitud”</p></td><td><p>Se muestra en pantalla el mensaje "El campo número de celular no puede estar vacío”</p></td><td></td><td>Passed</td></tr></table><br><br><div class="Title2">Folder:Cancelar cita médica</div><div class="Description"></div><div class="Title3">Test TC:329-CP001 - Flujo Basico</div><div class="Description"></div><table class="HiddenTable"><tr><th>Execution Status:</th><td>Passed</td><th>Priority:</th><td></td></tr><tr><th>Type:</th><td>Functional</td><th>Status:</th><td>Draft</td></tr><tr><th>Author:</th><td>System Administrator</td><th>Creation Date:</th><td class="Date">15-Dec-2021 </td></tr><tr><th>Owner:</th><td></td><th>Last Execution:</th><td class="Date">17-Dec-2021 </td></tr><tr><th>Automation Engine:</th><td></td><th>Last Updated:</th><td class="Date">16-Dec-2021 </td></tr><tr><th>Component(s):</th><td colspan="3"></td></tr></table><table class="DataGrid"><tr><th>Step</th><th>Description</th><th>Expected Result</th><th>Sample Data</th><th>Last Status</th></tr><tr><td>1</td><td><p>Selecciona la opción “Cancelar Cita" que se despliega del botón “Citas Programadas”</p></td><td><p>Se muestran los campos “Número de cédula”, “Fecha de nacimiento”, “Número de cita” y “Campo de Cancelar”</p></td><td></td><td>Passed</td></tr><tr><td>2</td><td><p>Ingresar los datos en los campos</p></td><td><p>Los datos pueden ingresarse</p></td><td><p>Cédula = 8-123-1235<br>Fecha de nacimiento = 1/5/2003<br>Número de cita = 10<br>Cancelar = Cancelar<br>&nbsp;</p></td><td>Passed</td></tr><tr><td>3</td><td><p>Selecciona la opción “Cancelar”</p></td><td><p>Se muestra en pantalla el mensaje “<span style="background-color:hsl(0,0%,100%);color:hsl(0,0%,0%);font-size:16px;">Cita cancelada correctamente</span>”</p></td><td></td><td>Passed</td></tr></table><br><br><div class="Title3">Test TC:337-CP002 - No se encuentra registrada: "Cédula"</div><div class="Description"></div><table class="HiddenTable"><tr><th>Execution Status:</th><td>Passed</td><th>Priority:</th><td></td></tr><tr><th>Type:</th><td>Functional</td><th>Status:</th><td>Draft</td></tr><tr><th>Author:</th><td>System Administrator</td><th>Creation Date:</th><td class="Date">15-Dec-2021 </td></tr><tr><th>Owner:</th><td></td><th>Last Execution:</th><td class="Date">17-Dec-2021 </td></tr><tr><th>Automation Engine:</th><td></td><th>Last Updated:</th><td class="Date">15-Dec-2021 </td></tr><tr><th>Component(s):</th><td colspan="3"></td></tr></table><table class="DataGrid"><tr><th>Step</th><th>Description</th><th>Expected Result</th><th>Sample Data</th><th>Last Status</th></tr><tr><td>1</td><td><p>Selecciona la opción “Cancelar Cita" que se despliega del botón “Citas Programadas”</p></td><td><p>Se muestran los campos “Número de cédula”, “Fecha de nacimiento”, “Número de cita” y “Campo de Cancelar”</p></td><td></td><td>Passed</td></tr><tr><td>2</td><td><p>Ingresar los datos en los campos</p></td><td><p>Los datos pueden ingresarse</p></td><td><p>Cédula = 8-123-1234<br>Fecha de nacimiento = 1/5/2003<br>Número de cita = 10<br>Cancelar = Cancelar<br>&nbsp;</p></td><td>Passed</td></tr><tr><td>3</td><td><p>Selecciona la opción “Cancelar”</p></td><td><p>Se muestra en pantalla el mensaje “La cédula no corresponde a ningún paciente"</p></td><td></td><td>Passed</td></tr></table><br><br><div class="Title3">Test TC:338-CP003 - Campo vacío: "Cédula" </div><div class="Description"></div><table class="HiddenTable"><tr><th>Execution Status:</th><td>Passed</td><th>Priority:</th><td></td></tr><tr><th>Type:</th><td>Functional</td><th>Status:</th><td>Draft</td></tr><tr><th>Author:</th><td>System Administrator</td><th>Creation Date:</th><td class="Date">15-Dec-2021 </td></tr><tr><th>Owner:</th><td></td><th>Last Execution:</th><td class="Date">17-Dec-2021 </td></tr><tr><th>Automation Engine:</th><td></td><th>Last Updated:</th><td class="Date">15-Dec-2021 </td></tr><tr><th>Component(s):</th><td colspan="3"></td></tr></table><table class="DataGrid"><tr><th>Step</th><th>Description</th><th>Expected Result</th><th>Sample Data</th><th>Last Status</th></tr><tr><td>1</td><td><p>Selecciona la opción “Cancelar Cita" que se despliega del botón “Citas Programadas”</p></td><td><p>Se muestran los campos “Número de cédula”, “Fecha de nacimiento”, “Número de cita” y “Campo de Cancelar”</p></td><td></td><td>Passed</td></tr><tr><td>2</td><td><p>Ingresar los datos en los campos</p></td><td><p>Los datos pueden ingresarse</p></td><td><p>Cédula =&nbsp;<br>Fecha de nacimiento = 1/5/2003<br>Número de cita = 10<br>Cancelar = Cancelar<br>&nbsp;</p></td><td>Passed</td></tr><tr><td>3</td><td><p>Selecciona la opción “Cancelar”</p></td><td><p>Se muestra en pantalla el mensaje “El campo cédula no puede estar vacío"</p></td><td></td><td>Passed</td></tr></table><br><br><div class="Title3">Test TC:339-CP004 - No coincide con cédula registrada: "Fecha"</div><div class="Description"></div><table class="HiddenTable"><tr><th>Execution Status:</th><td>Passed</td><th>Priority:</th><td></td></tr><tr><th>Type:</th><td>Functional</td><th>Status:</th><td>Draft</td></tr><tr><th>Author:</th><td>System Administrator</td><th>Creation Date:</th><td class="Date">15-Dec-2021 </td></tr><tr><th>Owner:</th><td></td><th>Last Execution:</th><td class="Date">17-Dec-2021 </td></tr><tr><th>Automation Engine:</th><td></td><th>Last Updated:</th><td class="Date">15-Dec-2021 </td></tr><tr><th>Component(s):</th><td colspan="3"></td></tr></table><table class="DataGrid"><tr><th>Step</th><th>Description</th><th>Expected Result</th><th>Sample Data</th><th>Last Status</th></tr><tr><td>1</td><td><p>Selecciona la opción “Cancelar Cita" que se despliega del botón “Citas Programadas”</p></td><td><p>Se muestran los campos “Número de cédula”, “Fecha de nacimiento”, “Número de cita” y “Campo de Cancelar”</p></td><td></td><td>Passed</td></tr><tr><td>2</td><td><p>Ingresar los datos en los campos</p></td><td><p>Los datos pueden ingresarse</p></td><td><p>Cédula =&nbsp;8-123-1235<br>Fecha de nacimiento = 1/3/2003<br>Número de cita = 10<br>Cancelar = Cancelar<br>&nbsp;</p></td><td>Passed</td></tr><tr><td>3</td><td><p>Selecciona la opción “Cancelar”</p></td><td><p>Se muestra en pantalla el mensaje “La fecha de nacimiento introducida no coincide con la cédula registrada"</p></td><td></td><td>Passed</td></tr></table><br><br><div class="Title3">Test TC:340-CP005 - Campo vacío: "Fecha" </div><div class="Description"></div><table class="HiddenTable"><tr><th>Execution Status:</th><td>Passed</td><th>Priority:</th><td></td></tr><tr><th>Type:</th><td>Functional</td><th>Status:</th><td>Draft</td></tr><tr><th>Author:</th><td>System Administrator</td><th>Creation Date:</th><td class="Date">15-Dec-2021 </td></tr><tr><th>Owner:</th><td></td><th>Last Execution:</th><td class="Date">17-Dec-2021 </td></tr><tr><th>Automation Engine:</th><td></td><th>Last Updated:</th><td class="Date">15-Dec-2021 </td></tr><tr><th>Component(s):</th><td colspan="3"></td></tr></table><table class="DataGrid"><tr><th>Step</th><th>Description</th><th>Expected Result</th><th>Sample Data</th><th>Last Status</th></tr><tr><td>1</td><td><p>Selecciona la opción “Cancelar Cita" que se despliega del botón “Citas Programadas”</p></td><td><p>Se muestran los campos “Número de cédula”, “Fecha de nacimiento”, “Número de cita” y “Campo de Cancelar”</p></td><td></td><td>Passed</td></tr><tr><td>2</td><td><p>Ingresar los datos en los campos</p></td><td><p>Los datos pueden ingresarse</p></td><td><p>Cédula =&nbsp;8-123-1235<br>Fecha de nacimiento =&nbsp;<br>Número de cita = 10<br>Cancelar = Cancelar<br>&nbsp;</p></td><td>Passed</td></tr><tr><td>3</td><td><p>Selecciona la opción “Cancelar”</p></td><td><p>Se muestra en pantalla el mensaje “El campo fecha de nacimiento no puede estar vacío"</p></td><td></td><td>Passed</td></tr></table><br><br><div class="Title3">Test TC:341-CP006 - No se encuentra registrado: "Número de cita"</div><div class="Description"></div><table class="HiddenTable"><tr><th>Execution Status:</th><td>Passed</td><th>Priority:</th><td></td></tr><tr><th>Type:</th><td>Functional</td><th>Status:</th><td>Draft</td></tr><tr><th>Author:</th><td>System Administrator</td><th>Creation Date:</th><td class="Date">15-Dec-2021 </td></tr><tr><th>Owner:</th><td></td><th>Last Execution:</th><td class="Date">17-Dec-2021 </td></tr><tr><th>Automation Engine:</th><td></td><th>Last Updated:</th><td class="Date">16-Dec-2021 </td></tr><tr><th>Component(s):</th><td colspan="3"></td></tr></table><table class="DataGrid"><tr><th>Step</th><th>Description</th><th>Expected Result</th><th>Sample Data</th><th>Last Status</th></tr><tr><td>1</td><td><p>Selecciona la opción “Cancelar Cita" que se despliega del botón “Citas Programadas”</p></td><td><p>Se muestran los campos “Número de cédula”, “Fecha de nacimiento”, “Número de cita” y “Campo de Cancelar”</p></td><td></td><td>Passed</td></tr><tr><td>2</td><td><p>Ingresar los datos en los campos</p></td><td><p>Los datos pueden ingresarse</p></td><td><p>Cédula =&nbsp;8-123-1235<br>Fecha de nacimiento =&nbsp;1/5/2003<br>Número de cita = 100<br>Cancelar = Cancelar<br>&nbsp;</p></td><td>Passed</td></tr><tr><td>3</td><td><p>Selecciona la opción “Cancelar”</p></td><td><p>Se muestra en pantalla el mensaje “el número de cita no corresponde al paciente"</p></td><td></td><td>Passed</td></tr></table><br><br><div class="Title3">Test TC:342-CP007 - Campo vacío: "Número de cita"</div><div class="Description"></div><table class="HiddenTable"><tr><th>Execution Status:</th><td>Passed</td><th>Priority:</th><td></td></tr><tr><th>Type:</th><td>Functional</td><th>Status:</th><td>Draft</td></tr><tr><th>Author:</th><td>System Administrator</td><th>Creation Date:</th><td class="Date">15-Dec-2021 </td></tr><tr><th>Owner:</th><td></td><th>Last Execution:</th><td class="Date">17-Dec-2021 </td></tr><tr><th>Automation Engine:</th><td></td><th>Last Updated:</th><td class="Date">17-Dec-2021 </td></tr><tr><th>Component(s):</th><td colspan="3"></td></tr></table><table class="DataGrid"><tr><th>Step</th><th>Description</th><th>Expected Result</th><th>Sample Data</th><th>Last Status</th></tr><tr><td>1</td><td><p>Selecciona la opción “Cancelar Cita" que se despliega del botón “Citas Programadas”</p></td><td><p>Se muestran los campos “Número de cédula”, “Fecha de nacimiento”, “Número de cita” y “Campo de Cancelar”</p></td><td></td><td>Passed</td></tr><tr><td>2</td><td><p>Ingresar los datos en los campos</p></td><td><p>Los datos pueden ingresarse</p></td><td><p>Cédula =&nbsp;8-123-1235<br>Fecha de nacimiento =&nbsp;1/5/2003<br>Número de cita =&nbsp;<br>Cancelar = Cancelar<br>&nbsp;</p></td><td>Passed</td></tr><tr><td>3</td><td><p>Selecciona la opción “Cancelar”</p></td><td><p>Se muestra en pantalla el mensaje “El campo número de cita no puede estar vacío" y “el número de cita no corresponde al paciente”</p></td><td></td><td>Passed</td></tr></table><br><br><div class="Title3">Test TC:343-CP008 - Valor incorrecto: "Captcha"</div><div class="Description"></div><table class="HiddenTable"><tr><th>Execution Status:</th><td>Passed</td><th>Priority:</th><td></td></tr><tr><th>Type:</th><td>Functional</td><th>Status:</th><td>Draft</td></tr><tr><th>Author:</th><td>System Administrator</td><th>Creation Date:</th><td class="Date">15-Dec-2021 </td></tr><tr><th>Owner:</th><td></td><th>Last Execution:</th><td class="Date">17-Dec-2021 </td></tr><tr><th>Automation Engine:</th><td></td><th>Last Updated:</th><td class="Date">16-Dec-2021 </td></tr><tr><th>Component(s):</th><td colspan="3"></td></tr></table><table class="DataGrid"><tr><th>Step</th><th>Description</th><th>Expected Result</th><th>Sample Data</th><th>Last Status</th></tr><tr><td>1</td><td><p>Selecciona la opción “Cancelar Cita" que se despliega del botón “Citas Programadas”</p></td><td><p>Se muestran los campos “Número de cédula”, “Fecha de nacimiento”, “Número de cita” y “Campo de Cancelar”</p></td><td></td><td>Passed</td></tr><tr><td>2</td><td><p>Ingresar los datos en los campos</p></td><td><p>Los datos pueden ingresarse</p></td><td><p>Cédula =&nbsp;8-123-1235<br>Fecha de nacimiento =&nbsp;1/5/2003<br>Número de cita =&nbsp;10<br>Cancelar = Cancela<br>&nbsp;</p></td><td>Passed</td></tr><tr><td>3</td><td><p>Selecciona la opción “Cancelar”</p></td><td><p>Se muestra en pantalla el mensaje “Captcha incorrecto"</p></td><td></td><td>Passed</td></tr></table><br><br><div class="Title3">Test TC:344-CP009 - Campo vacío: "Captcha"</div><div class="Description"></div><table class="HiddenTable"><tr><th>Execution Status:</th><td>Passed</td><th>Priority:</th><td></td></tr><tr><th>Type:</th><td>Functional</td><th>Status:</th><td>Draft</td></tr><tr><th>Author:</th><td>System Administrator</td><th>Creation Date:</th><td class="Date">15-Dec-2021 </td></tr><tr><th>Owner:</th><td></td><th>Last Execution:</th><td class="Date">17-Dec-2021 </td></tr><tr><th>Automation Engine:</th><td></td><th>Last Updated:</th><td class="Date">15-Dec-2021 </td></tr><tr><th>Component(s):</th><td colspan="3"></td></tr></table><table class="DataGrid"><tr><th>Step</th><th>Description</th><th>Expected Result</th><th>Sample Data</th><th>Last Status</th></tr><tr><td>1</td><td><p>Selecciona la opción “Cancelar Cita" que se despliega del botón “Citas Programadas”</p></td><td><p>Se muestran los campos “Número de cédula”, “Fecha de nacimiento”, “Número de cita” y “Campo de Cancelar”</p></td><td></td><td>Passed</td></tr><tr><td>2</td><td><p>Ingresar los datos en los campos</p></td><td><p>Los datos pueden ingresarse</p></td><td><p>Cédula =&nbsp;8-123-1235<br>Fecha de nacimiento =&nbsp;1/5/2003<br>Número de cita =&nbsp;10<br>Cancelar =&nbsp;<br>&nbsp;</p></td><td>Passed</td></tr><tr><td>3</td><td><p>Selecciona la opción “Cancelar”</p></td><td><p>Se muestra en pantalla el mensaje “El captcha no puede estar vacío"</p></td><td></td><td>Passed</td></tr></table><br><br><div class="Title2">Folder:Iniciar sesión</div><div class="Description"></div><div class="Title3">Test TC:312-CP001 - Flujo Basico</div><div class="Description"></div><table class="HiddenTable"><tr><th>Execution Status:</th><td>Passed</td><th>Priority:</th><td></td></tr><tr><th>Type:</th><td>Functional</td><th>Status:</th><td>Draft</td></tr><tr><th>Author:</th><td>System Administrator</td><th>Creation Date:</th><td class="Date">15-Dec-2021 </td></tr><tr><th>Owner:</th><td></td><th>Last Execution:</th><td class="Date">16-Dec-2021 </td></tr><tr><th>Automation Engine:</th><td></td><th>Last Updated:</th><td class="Date">15-Dec-2021 </td></tr><tr><th>Component(s):</th><td colspan="3"></td></tr></table><table class="DataGrid"><tr><th>Step</th><th>Description</th><th>Expected Result</th><th>Sample Data</th><th>Last Status</th></tr><tr><td>1</td><td colspan="3">Call'Ingresar al sitio web'<i>withurl= 'localhost',</i></td><td>N/A</td></tr><tr><td>2</td><td><p>Selecciona la opción “Sitio para médicos”</p></td><td><p>Se muestran los campos “Cédula” y “Contraseña”</p></td><td></td><td>Passed</td></tr><tr><td>3</td><td><p>Ingresar los datos en los campos</p></td><td><p>Los datos pueden ingresarse</p></td><td><p>Cédula = 8-000-0001<br>Contraseña = clave321</p></td><td>Passed</td></tr><tr><td>4</td><td><p>Selecciona la opción “Iniciar sesión”</p></td><td><p>Se muestra en pantalla el sitio para médicos</p></td><td></td><td>Passed</td></tr></table><br><br><div class="Title3">Test TC:313-CP002 - Contraseña incorrecta: "Contraseña"</div><div class="Description"></div><table class="HiddenTable"><tr><th>Execution Status:</th><td>Passed</td><th>Priority:</th><td></td></tr><tr><th>Type:</th><td>Functional</td><th>Status:</th><td>Draft</td></tr><tr><th>Author:</th><td>System Administrator</td><th>Creation Date:</th><td class="Date">15-Dec-2021 </td></tr><tr><th>Owner:</th><td></td><th>Last Execution:</th><td class="Date">16-Dec-2021 </td></tr><tr><th>Automation Engine:</th><td></td><th>Last Updated:</th><td class="Date">16-Dec-2021 </td></tr><tr><th>Component(s):</th><td colspan="3"></td></tr></table><table class="DataGrid"><tr><th>Step</th><th>Description</th><th>Expected Result</th><th>Sample Data</th><th>Last Status</th></tr><tr><td>1</td><td colspan="3">Call'Ingresar al sitio web'<i>withurl= 'localhost',</i></td><td>N/A</td></tr><tr><td>2</td><td><p>Selecciona la opción “Sitio para médicos”</p></td><td><p>Se muestran los campos “Cédula” y “Contraseña”</p></td><td></td><td>Passed</td></tr><tr><td>3</td><td><p>Ingresar los datos en los campos</p></td><td><p>Los datos pueden ingresarse</p></td><td><p>Cédula = 8-000-0001<br>Contraseña = 123456</p></td><td>Passed</td></tr><tr><td>4</td><td><p>Selecciona la opción “Iniciar sesión”</p></td><td><p>Se muestra en pantalla el mensaje “Contraseña Incorrecta”</p></td><td></td><td>Passed</td></tr></table><br><br><div class="Title3">Test TC:314-CP003 - Campo vacío: "Contraseña"</div><div class="Description"></div><table class="HiddenTable"><tr><th>Execution Status:</th><td>Passed</td><th>Priority:</th><td></td></tr><tr><th>Type:</th><td>Functional</td><th>Status:</th><td>Draft</td></tr><tr><th>Author:</th><td>System Administrator</td><th>Creation Date:</th><td class="Date">15-Dec-2021 </td></tr><tr><th>Owner:</th><td></td><th>Last Execution:</th><td class="Date">16-Dec-2021 </td></tr><tr><th>Automation Engine:</th><td></td><th>Last Updated:</th><td class="Date">15-Dec-2021 </td></tr><tr><th>Component(s):</th><td colspan="3"></td></tr></table><table class="DataGrid"><tr><th>Step</th><th>Description</th><th>Expected Result</th><th>Sample Data</th><th>Last Status</th></tr><tr><td>1</td><td colspan="3">Call'Ingresar al sitio web'<i>withurl= 'localhost',</i></td><td>N/A</td></tr><tr><td>2</td><td><p>Selecciona la opción “Sitio para médicos”</p></td><td><p>Se muestran los campos “Cédula” y “Contraseña”</p></td><td></td><td>Passed</td></tr><tr><td>3</td><td><p>Ingresar los datos en los campos</p></td><td><p>Los datos pueden ingresarse</p></td><td><p>Cédula = 8-000-0001<br>Contraseña =&nbsp;</p></td><td>Passed</td></tr><tr><td>4</td><td><p>Selecciona la opción “Iniciar sesión”</p></td><td><p>Se muestra en pantalla el mensaje “El campo contraseña no puede estar vacío”</p></td><td></td><td>Passed</td></tr></table><br><br><div class="Title3">Test TC:315-CP004 - Cédula incorrecta: "Cédula" </div><div class="Description"></div><table class="HiddenTable"><tr><th>Execution Status:</th><td>Passed</td><th>Priority:</th><td></td></tr><tr><th>Type:</th><td>Functional</td><th>Status:</th><td>Draft</td></tr><tr><th>Author:</th><td>System Administrator</td><th>Creation Date:</th><td class="Date">15-Dec-2021 </td></tr><tr><th>Owner:</th><td></td><th>Last Execution:</th><td class="Date">16-Dec-2021 </td></tr><tr><th>Automation Engine:</th><td></td><th>Last Updated:</th><td class="Date">15-Dec-2021 </td></tr><tr><th>Component(s):</th><td colspan="3"></td></tr></table><table class="DataGrid"><tr><th>Step</th><th>Description</th><th>Expected Result</th><th>Sample Data</th><th>Last Status</th></tr><tr><td>1</td><td colspan="3">Call'Ingresar al sitio web'<i>withurl= 'localhost',</i></td><td>N/A</td></tr><tr><td>2</td><td><p>Selecciona la opción “Sitio para médicos”</p></td><td><p>Se muestran los campos “Cédula” y “Contraseña”</p></td><td></td><td>Passed</td></tr><tr><td>3</td><td><p>Ingresar los datos en los campos</p></td><td><p>Los datos pueden ingresarse</p></td><td><p>Cédula =&nbsp;8-123-1234<br>Contraseña = Clave321</p></td><td>Passed</td></tr><tr><td>4</td><td><p>Selecciona la opción “Iniciar sesión”</p></td><td><p>Se muestra en pantalla el mensaje “Esta cédula no está registrada”</p></td><td></td><td>Passed</td></tr></table><br><br><div class="Title3">Test TC:316-CP005 - Campo vacío: "Cédula"</div><div class="Description"></div><table class="HiddenTable"><tr><th>Execution Status:</th><td>Passed</td><th>Priority:</th><td></td></tr><tr><th>Type:</th><td>Functional</td><th>Status:</th><td>Draft</td></tr><tr><th>Author:</th><td>System Administrator</td><th>Creation Date:</th><td class="Date">15-Dec-2021 </td></tr><tr><th>Owner:</th><td></td><th>Last Execution:</th><td class="Date">16-Dec-2021 </td></tr><tr><th>Automation Engine:</th><td></td><th>Last Updated:</th><td class="Date">15-Dec-2021 </td></tr><tr><th>Component(s):</th><td colspan="3"></td></tr></table><table class="DataGrid"><tr><th>Step</th><th>Description</th><th>Expected Result</th><th>Sample Data</th><th>Last Status</th></tr><tr><td>1</td><td colspan="3">Call'Ingresar al sitio web'<i>withurl= 'localhost',</i></td><td>N/A</td></tr><tr><td>2</td><td><p>Selecciona la opción “Sitio para médicos”</p></td><td><p>Se muestran los campos “Cédula” y “Contraseña”</p></td><td></td><td>Passed</td></tr><tr><td>3</td><td><p>Ingresar los datos en los campos</p></td><td><p>Los datos pueden ingresarse</p></td><td><p>Cédula =&nbsp;<br>Contraseña = Clave321</p></td><td>Passed</td></tr><tr><td>4</td><td><p>Selecciona la opción “Iniciar sesión”</p></td><td><p>Se muestra en pantalla el mensaje “El campo cédula no puede estar vacío”</p></td><td></td><td>Passed</td></tr></table><br><br><div class="Title2">Folder:Registrar paciente</div><div class="Description"></div><div class="Title3">Test TC:346-CP001 - Flujo basico</div><div class="Description"></div><table class="HiddenTable"><tr><th>Execution Status:</th><td>Passed</td><th>Priority:</th><td></td></tr><tr><th>Type:</th><td>Functional</td><th>Status:</th><td>Draft</td></tr><tr><th>Author:</th><td>System Administrator</td><th>Creation Date:</th><td class="Date">16-Dec-2021 </td></tr><tr><th>Owner:</th><td></td><th>Last Execution:</th><td class="Date">16-Dec-2021 </td></tr><tr><th>Automation Engine:</th><td></td><th>Last Updated:</th><td class="Date">16-Dec-2021 </td></tr><tr><th>Component(s):</th><td colspan="3"></td></tr></table><table class="DataGrid"><tr><th>Step</th><th>Description</th><th>Expected Result</th><th>Sample Data</th><th>Last Status</th></tr><tr><td>1</td><td colspan="3">Call'Ingresar al sitio web'<i>withurl= 'localhost',</i></td><td>N/A</td></tr><tr><td>2</td><td><p>Selecciona la opción “paciente nuevo" que se despliega del botón “Programar cita médica”</p></td><td><p>Se muestran los campos “Nombres”, “Apellidos”, “Numero de cedula”, “Fecha de Nacimiento”, “Tipo de sangre” y “Direccion residencial”</p></td><td></td><td>Passed</td></tr><tr><td>3</td><td><p>Ingresar los datos en los campos</p></td><td><p>Los datos pueden ingresar</p></td><td><p>Nombres =&nbsp;Sofia Victoria<br>Apellidos =&nbsp;Mazparrote Camejo<br>Cédula =&nbsp;8-123-1235<br>Fecha de nacimiento =&nbsp;1/5/2003<br>Dirección = Urb. Versalles, casa 42F</p><p>Tipo de Sangre = O positivo</p></td><td>Passed</td></tr><tr><td>4</td><td><p>Selecciona la opción “Finalizar Registro”</p></td><td><p>Se muestra en pantalla el mensaje “!Paciente registrado correctamente!”</p></td><td></td><td>Passed</td></tr></table><br><br><div class="Title3">Test TC:295-CP002 - Menos de dos caracteres: "Nombres"</div><div class="Description"></div><table class="HiddenTable"><tr><th>Execution Status:</th><td>Passed</td><th>Priority:</th><td></td></tr><tr><th>Type:</th><td>Functional</td><th>Status:</th><td>Draft</td></tr><tr><th>Author:</th><td>System Administrator</td><th>Creation Date:</th><td class="Date">15-Dec-2021 </td></tr><tr><th>Owner:</th><td></td><th>Last Execution:</th><td class="Date">17-Dec-2021 </td></tr><tr><th>Automation Engine:</th><td></td><th>Last Updated:</th><td class="Date">16-Dec-2021 </td></tr><tr><th>Component(s):</th><td colspan="3"></td></tr></table><table class="DataGrid"><tr><th>Step</th><th>Description</th><th>Expected Result</th><th>Sample Data</th><th>Last Status</th></tr><tr><td>1</td><td colspan="3">Call'Ingresar al sitio web'<i>withurl= 'localhost',</i></td><td>N/A</td></tr><tr><td>2</td><td><p>Selecciona la opción “paciente nuevo" que se despliega del botón “Programar cita médica”</p></td><td><p>Se muestran los campos “Nombres”, “Apellidos”, “Numero de cedula”, “Fecha de Nacimiento”, “Tipo de sangre” y “Direccion residencial”</p></td><td></td><td>Passed</td></tr><tr><td>3</td><td><p>Ingresar los datos en los campos</p></td><td><p>Los datos pueden ingresarse</p></td><td><p>Nombres = a<br>Apellidos = Mazparrote Camejo<br>Cédula = 8-123-1235<br>Fecha de nacimiento = 1/5/2003<br>Dirección = Urb. Versalles, casa 42F</p><p>Tipo de Sangre = O positivo</p></td><td>Passed</td></tr><tr><td>4</td><td><p>Selecciona la opción “Finalizar Registro”</p></td><td><p>Se muestra en pantalla el mensaje “El campo nombres solo puede contener de 3 a 25 letras”</p></td><td></td><td>Passed</td></tr></table><br><br><div class="Title3">Test TC:296-CP003 - Más de 25 caracteres: "Nombres"</div><div class="Description"></div><table class="HiddenTable"><tr><th>Execution Status:</th><td>Passed</td><th>Priority:</th><td></td></tr><tr><th>Type:</th><td>Functional</td><th>Status:</th><td>Draft</td></tr><tr><th>Author:</th><td>System Administrator</td><th>Creation Date:</th><td class="Date">15-Dec-2021 </td></tr><tr><th>Owner:</th><td></td><th>Last Execution:</th><td class="Date">17-Dec-2021 </td></tr><tr><th>Automation Engine:</th><td></td><th>Last Updated:</th><td class="Date">16-Dec-2021 </td></tr><tr><th>Component(s):</th><td colspan="3"></td></tr></table><table class="DataGrid"><tr><th>Step</th><th>Description</th><th>Expected Result</th><th>Sample Data</th><th>Last Status</th></tr><tr><td>1</td><td colspan="3">Call'Ingresar al sitio web'<i>withurl= 'localhost',</i></td><td>N/A</td></tr><tr><td>2</td><td><p>Selecciona la opción “paciente nuevo" que se despliega del botón “Programar cita médica”</p></td><td><p>Se muestran los campos “Nombres”, “Apellidos”, “Numero de cedula”, “Fecha de Nacimiento”, “Tipo de sangre” y “Direccion residencial”</p></td><td></td><td>Passed</td></tr><tr><td>3</td><td><p>Ingresar los datos en los campos</p></td><td><p>Los datos pueden ingresarse</p></td><td><p>Nombres = sofiavictoriamazparrotecamejo<br>Apellidos = Mazparrote Camejo<br>Cédula = 8-123-1235<br>Fecha de nacimiento = 1/5/2003<br>Dirección = Urb. Versalles, casa 42F</p><p>Tipo de Sangre = O positivo</p></td><td>Passed</td></tr><tr><td>4</td><td><p>Selecciona la opción “Finalizar Registro”</p></td><td><p>Se muestra en pantalla el mensaje “El campo nombres solo puede contener de 3 a 25 letras”</p></td><td></td><td>Passed</td></tr></table><br><br><div class="Title3">Test TC:297-CP004 - Caracter no alfabético: "Nombres"</div><div class="Description"></div><table class="HiddenTable"><tr><th>Execution Status:</th><td>Passed</td><th>Priority:</th><td></td></tr><tr><th>Type:</th><td>Functional</td><th>Status:</th><td>Draft</td></tr><tr><th>Author:</th><td>System Administrator</td><th>Creation Date:</th><td class="Date">15-Dec-2021 </td></tr><tr><th>Owner:</th><td></td><th>Last Execution:</th><td class="Date">17-Dec-2021 </td></tr><tr><th>Automation Engine:</th><td></td><th>Last Updated:</th><td class="Date">16-Dec-2021 </td></tr><tr><th>Component(s):</th><td colspan="3"></td></tr></table><table class="DataGrid"><tr><th>Step</th><th>Description</th><th>Expected Result</th><th>Sample Data</th><th>Last Status</th></tr><tr><td>1</td><td colspan="3">Call'Ingresar al sitio web'<i>withurl= 'localhost',</i></td><td>N/A</td></tr><tr><td>2</td><td><p>Selecciona la opción “paciente nuevo" que se despliega del botón “Programar cita médica”</p></td><td><p>Se muestran los campos “Nombres”, “Apellidos”, “Numero de cedula”, “Fecha de Nacimiento”, “Tipo de sangre” y “Direccion residencial”</p></td><td></td><td>Passed</td></tr><tr><td>3</td><td><p>Ingresar los datos en los campos</p></td><td><p>Los datos pueden ingresarse</p></td><td><p>Nombres = Sofia 5<br>Apellidos = Mazparrote Camejo<br>Cédula = 8-123-1235<br>Fecha de nacimiento = 1/5/2003<br>Dirección = Urb. Versalles, casa 42F</p><p>Tipo de Sangre = O positivo</p></td><td>Passed</td></tr><tr><td>4</td><td><p>Selecciona la opción “Finalizar Registro”</p></td><td><p>Se muestra en pantalla el mensaje “El campo nombres solo puede contener letras”</p></td><td></td><td>Passed</td></tr></table><br><br><div class="Title3">Test TC:298-CP005 - Campo vacío: "Nombres"</div><div class="Description"></div><table class="HiddenTable"><tr><th>Execution Status:</th><td>Passed</td><th>Priority:</th><td></td></tr><tr><th>Type:</th><td>Functional</td><th>Status:</th><td>Draft</td></tr><tr><th>Author:</th><td>System Administrator</td><th>Creation Date:</th><td class="Date">15-Dec-2021 </td></tr><tr><th>Owner:</th><td></td><th>Last Execution:</th><td class="Date">17-Dec-2021 </td></tr><tr><th>Automation Engine:</th><td></td><th>Last Updated:</th><td class="Date">16-Dec-2021 </td></tr><tr><th>Component(s):</th><td colspan="3"></td></tr></table><table class="DataGrid"><tr><th>Step</th><th>Description</th><th>Expected Result</th><th>Sample Data</th><th>Last Status</th></tr><tr><td>1</td><td colspan="3">Call'Ingresar al sitio web'<i>withurl= 'localhost',</i></td><td>N/A</td></tr><tr><td>2</td><td><p>Selecciona la opción “paciente nuevo" que se despliega del botón “Programar cita médica”</p></td><td><p>Se muestran los campos “Nombres”, “Apellidos”, “Numero de cedula”, “Fecha de Nacimiento”, “Tipo de sangre” y “Direccion residencial”</p></td><td></td><td>Passed</td></tr><tr><td>3</td><td><p>Ingresar los datos en los campos</p></td><td><p>Los datos pueden ingresarse</p></td><td><p>Nombres =&nbsp;<br>Apellidos = Mazparrote Camejo<br>Cédula = 8-123-1235<br>Fecha de nacimiento = 1/5/2003<br>Dirección = Urb. Versalles, casa 42F</p><p>Tipo de sangre = O positivo</p></td><td>Passed</td></tr><tr><td>4</td><td><p>Selecciona la opción “Finalizar Registro”</p></td><td><p>Se muestra en pantalla el mensaje “El campo nombres no puede estar vacío”</p></td><td></td><td>Passed</td></tr></table><br><br><div class="Title3">Test TC:299-CP006 - Menos de dos caracteres: "Apellidos" </div><div class="Description"></div><table class="HiddenTable"><tr><th>Execution Status:</th><td>Passed</td><th>Priority:</th><td></td></tr><tr><th>Type:</th><td>Functional</td><th>Status:</th><td>Draft</td></tr><tr><th>Author:</th><td>System Administrator</td><th>Creation Date:</th><td class="Date">15-Dec-2021 </td></tr><tr><th>Owner:</th><td></td><th>Last Execution:</th><td class="Date">17-Dec-2021 </td></tr><tr><th>Automation Engine:</th><td></td><th>Last Updated:</th><td class="Date">16-Dec-2021 </td></tr><tr><th>Component(s):</th><td colspan="3"></td></tr></table><table class="DataGrid"><tr><th>Step</th><th>Description</th><th>Expected Result</th><th>Sample Data</th><th>Last Status</th></tr><tr><td>1</td><td colspan="3">Call'Ingresar al sitio web'<i>withurl= 'localhost',</i></td><td>N/A</td></tr><tr><td>2</td><td><p>Selecciona la opción “paciente nuevo" que se despliega del botón “Programar cita médica”</p></td><td><p>Se muestran los campos “Nombres”, “Apellidos”, “Numero de cedula”, “Fecha de Nacimiento”, “Tipo de sangre” y “Direccion residencial”</p></td><td></td><td>Passed</td></tr><tr><td>3</td><td><p>Ingresar los datos en los campos</p></td><td><p>Los datos pueden ingresarse</p></td><td><p>Nombres =&nbsp;Sofia Vcitoria<br>Apellidos = A<br>Cédula = 8-123-1235<br>Fecha de nacimiento = 1/5/2003<br>Dirección = Urb. Versalles, casa 42F</p><p>Tipo de Sangre = O positivo</p></td><td>Passed</td></tr><tr><td>4</td><td><p>Selecciona la opción “Finalizar Registro”</p></td><td><p>Se muestra en pantalla el mensaje “El campo apellidos solo puede contener de 3 a 25 letras”</p></td><td></td><td>Passed</td></tr></table><br><br><div class="Title3">Test TC:300-CP007 - Más de 25 caracteres: "Apellidos" </div><div class="Description"></div><table class="HiddenTable"><tr><th>Execution Status:</th><td>Passed</td><th>Priority:</th><td></td></tr><tr><th>Type:</th><td>Functional</td><th>Status:</th><td>Draft</td></tr><tr><th>Author:</th><td>System Administrator</td><th>Creation Date:</th><td class="Date">15-Dec-2021 </td></tr><tr><th>Owner:</th><td></td><th>Last Execution:</th><td class="Date">17-Dec-2021 </td></tr><tr><th>Automation Engine:</th><td></td><th>Last Updated:</th><td class="Date">16-Dec-2021 </td></tr><tr><th>Component(s):</th><td colspan="3"></td></tr></table><table class="DataGrid"><tr><th>Step</th><th>Description</th><th>Expected Result</th><th>Sample Data</th><th>Last Status</th></tr><tr><td>1</td><td colspan="3">Call'Ingresar al sitio web'<i>withurl= 'localhost',</i></td><td>N/A</td></tr><tr><td>2</td><td><p>Selecciona la opción “paciente nuevo" que se despliega del botón “Programar cita médica”</p></td><td><p>Se muestran los campos “Nombres”, “Apellidos”, “Numero de cedula”, “Fecha de Nacimiento”, “Tipo de sangre” y “Direccion residencial”</p></td><td></td><td>Passed</td></tr><tr><td>3</td><td><p>Ingresar los datos en los campos</p></td><td><p>Los datos pueden ingresarse</p></td><td><p>Nombres = Sofia Victoria<br>Apellidos = MazparroteMazparroteMazparroteMazparrote<br>Cédula = 8-123-1235<br>Fecha de nacimiento = 1/5/2003<br>Dirección = Urb. Versalles, casa 42F</p><p>Tipo de sangre = O positivo</p></td><td>Passed</td></tr><tr><td>4</td><td><p>Selecciona la opción “Finalizar Registro”</p></td><td><p>Se muestra en pantalla el mensaje “El campo apellidos solo puede contener de 3 a 25 letras”</p></td><td></td><td>Passed</td></tr></table><br><br><div class="Title3">Test TC:301-CP008 - Caracter no alfabético: "Apellidos"</div><div class="Description"></div><table class="HiddenTable"><tr><th>Execution Status:</th><td>Passed</td><th>Priority:</th><td></td></tr><tr><th>Type:</th><td>Functional</td><th>Status:</th><td>Draft</td></tr><tr><th>Author:</th><td>System Administrator</td><th>Creation Date:</th><td class="Date">15-Dec-2021 </td></tr><tr><th>Owner:</th><td></td><th>Last Execution:</th><td class="Date">17-Dec-2021 </td></tr><tr><th>Automation Engine:</th><td></td><th>Last Updated:</th><td class="Date">16-Dec-2021 </td></tr><tr><th>Component(s):</th><td colspan="3"></td></tr></table><table class="DataGrid"><tr><th>Step</th><th>Description</th><th>Expected Result</th><th>Sample Data</th><th>Last Status</th></tr><tr><td>1</td><td colspan="3">Call'Ingresar al sitio web'<i>withurl= 'localhost',</i></td><td>N/A</td></tr><tr><td>2</td><td><p>Selecciona la opción “paciente nuevo" que se despliega del botón “Programar cita médica”</p></td><td><p>Se muestran los campos “Nombres”, “Apellidos”, “Numero de cedula”, “Fecha de Nacimiento”, “Tipo de sangre” y “Direccion residencial”</p></td><td></td><td>Passed</td></tr><tr><td>3</td><td><p>Ingresar los datos en los campos</p></td><td><p>Los datos pueden ingresarse</p></td><td><p>Nombres = Sofia Victoria<br>Apellidos = M4zparrote<br>Cédula = 8-123-1235<br>Fecha de nacimiento = 1/5/2003<br>Dirección = Urb. Versalles, casa 42F</p><p>Tipo de sangre = O positivo</p></td><td>Passed</td></tr><tr><td>4</td><td><p>Selecciona la opción “Finalizar Registro”</p></td><td><p>Se muestra en pantalla el mensaje “El campo apellidos solo puede contener letras”</p></td><td></td><td>Passed</td></tr></table><br><br><div class="Title3">Test TC:302-CP009 - Campo vacío: "Apellidos"</div><div class="Description"></div><table class="HiddenTable"><tr><th>Execution Status:</th><td>Passed</td><th>Priority:</th><td></td></tr><tr><th>Type:</th><td>Functional</td><th>Status:</th><td>Draft</td></tr><tr><th>Author:</th><td>System Administrator</td><th>Creation Date:</th><td class="Date">15-Dec-2021 </td></tr><tr><th>Owner:</th><td></td><th>Last Execution:</th><td class="Date">17-Dec-2021 </td></tr><tr><th>Automation Engine:</th><td></td><th>Last Updated:</th><td class="Date">16-Dec-2021 </td></tr><tr><th>Component(s):</th><td colspan="3"></td></tr></table><table class="DataGrid"><tr><th>Step</th><th>Description</th><th>Expected Result</th><th>Sample Data</th><th>Last Status</th></tr><tr><td>1</td><td colspan="3">Call'Ingresar al sitio web'<i>withurl= 'localhost',</i></td><td>N/A</td></tr><tr><td>2</td><td><p>Selecciona la opción “paciente nuevo" que se despliega del botón “Programar cita médica”</p></td><td><p>Se muestran los campos “Nombres”, “Apellidos”, “Numero de cedula”, “Fecha de Nacimiento”, “Tipo de sangre” y “Direccion residencial”</p></td><td></td><td>Passed</td></tr><tr><td>3</td><td><p>Ingresar los datos en los campos</p></td><td><p>Los datos pueden ingresarse</p></td><td><p>Nombres =&nbsp;Sofia Victoria<br>Apellidos =&nbsp;<br>Cédula = 8-123-1235<br>Fecha de nacimiento = 1/5/2003<br>Dirección = Urb. Versalles, casa 42F</p><p>Tipo de sangre = O positivo</p></td><td>Passed</td></tr><tr><td>4</td><td><p>Selecciona la opción “Finalizar Registro”</p></td><td><p>Se muestra en pantalla el mensaje “El campo apellidos no puede estar vacío”</p></td><td></td><td>Passed</td></tr></table><br><br><div class="Title3">Test TC:303-CP010 - No tiene el formato: "Cédula"</div><div class="Description"></div><table class="HiddenTable"><tr><th>Execution Status:</th><td>Passed</td><th>Priority:</th><td></td></tr><tr><th>Type:</th><td>Functional</td><th>Status:</th><td>Draft</td></tr><tr><th>Author:</th><td>System Administrator</td><th>Creation Date:</th><td class="Date">15-Dec-2021 </td></tr><tr><th>Owner:</th><td></td><th>Last Execution:</th><td class="Date">17-Dec-2021 </td></tr><tr><th>Automation Engine:</th><td></td><th>Last Updated:</th><td class="Date">16-Dec-2021 </td></tr><tr><th>Component(s):</th><td colspan="3"></td></tr></table><table class="DataGrid"><tr><th>Step</th><th>Description</th><th>Expected Result</th><th>Sample Data</th><th>Last Status</th></tr><tr><td>1</td><td colspan="3">Call'Ingresar al sitio web'<i>withurl= 'localhost',</i></td><td>N/A</td></tr><tr><td>2</td><td><p>Selecciona la opción “paciente nuevo" que se despliega del botón “Programar cita médica”</p></td><td><p>Se muestran los campos “Nombres”, “Apellidos”, “Numero de cedula”, “Fecha de Nacimiento”, “Tipo de sangre” y “Direccion residencial”</p></td><td></td><td>Passed</td></tr><tr><td>3</td><td><p>Ingresar los datos en los campos</p></td><td><p>Los datos pueden ingresarse</p></td><td><p>Nombres =&nbsp;Sofia Victoria<br>Apellidos =&nbsp;Mazparrote Camejo<br>Cédula = 8231235<br>Fecha de nacimiento = 1/5/2003<br>Dirección = Urb. Versalles, casa 42F</p><p>Tipo de sangre = O positivo</p></td><td>Passed</td></tr><tr><td>4</td><td><p>Selecciona la opción “Finalizar Registro”</p></td><td><p>Se muestra en pantalla el mensaje “La cédula debe seguir los parámetros de cédula panameña”</p></td><td></td><td>Passed</td></tr></table><br><br><div class="Title3">Test TC:305-CP011 - Campo vacío: "Cédula" </div><div class="Description"></div><table class="HiddenTable"><tr><th>Execution Status:</th><td>Passed</td><th>Priority:</th><td></td></tr><tr><th>Type:</th><td>Functional</td><th>Status:</th><td>Draft</td></tr><tr><th>Author:</th><td>System Administrator</td><th>Creation Date:</th><td class="Date">15-Dec-2021 </td></tr><tr><th>Owner:</th><td></td><th>Last Execution:</th><td class="Date">17-Dec-2021 </td></tr><tr><th>Automation Engine:</th><td></td><th>Last Updated:</th><td class="Date">16-Dec-2021 </td></tr><tr><th>Component(s):</th><td colspan="3"></td></tr></table><table class="DataGrid"><tr><th>Step</th><th>Description</th><th>Expected Result</th><th>Sample Data</th><th>Last Status</th></tr><tr><td>1</td><td colspan="3">Call'Ingresar al sitio web'<i>withurl= 'localhost',</i></td><td>N/A</td></tr><tr><td>2</td><td><p>Selecciona la opción “paciente nuevo" que se despliega del botón “Programar cita médica”</p></td><td><p>Se muestran los campos “Nombres”, “Apellidos”, “Numero de cedula”, “Fecha de Nacimiento”, “Tipo de sangre” y “Direccion residencial”</p></td><td></td><td>Passed</td></tr><tr><td>3</td><td><p>Ingresar los datos en los campos</p></td><td><p>Los datos pueden ingresarse</p></td><td><p>Nombres =&nbsp;Sofia Victoria<br>Apellidos =&nbsp;Mazparrote Camejo<br>Cédula =&nbsp;<br>Fecha de nacimiento = 1/5/2003<br>Dirección = Urb. Versalles, casa 42F</p><p>Tipo de sangre = O positivo</p></td><td>Passed</td></tr><tr><td>4</td><td><p>Selecciona la opción “Finalizar Registro”</p></td><td><p>Se muestra en pantalla el mensaje “El campo cédula no puede estar vacío”</p></td><td></td><td>Passed</td></tr></table><br><br><div class="Title3">Test TC:309-CP012 - Campo vacío: "Fecha"</div><div class="Description"></div><table class="HiddenTable"><tr><th>Execution Status:</th><td>Passed</td><th>Priority:</th><td></td></tr><tr><th>Type:</th><td>Functional</td><th>Status:</th><td>Draft</td></tr><tr><th>Author:</th><td>System Administrator</td><th>Creation Date:</th><td class="Date">15-Dec-2021 </td></tr><tr><th>Owner:</th><td></td><th>Last Execution:</th><td class="Date">17-Dec-2021 </td></tr><tr><th>Automation Engine:</th><td></td><th>Last Updated:</th><td class="Date">16-Dec-2021 </td></tr><tr><th>Component(s):</th><td colspan="3"></td></tr></table><table class="DataGrid"><tr><th>Step</th><th>Description</th><th>Expected Result</th><th>Sample Data</th><th>Last Status</th></tr><tr><td>1</td><td colspan="3">Call'Ingresar al sitio web'<i>withurl= 'localhost',</i></td><td>N/A</td></tr><tr><td>2</td><td><p>Selecciona la opción “paciente nuevo" que se despliega del botón “Programar cita médica”</p></td><td><p>Se muestran los campos “Nombres”, “Apellidos”, “Numero de cedula”, “Fecha de Nacimiento”, “Tipo de sangre” y “Direccion residencial”</p></td><td></td><td>Passed</td></tr><tr><td>3</td><td><p>Ingresar los datos en los campos</p></td><td><p>Los datos pueden ingresarse</p></td><td><p>Nombres =&nbsp;Sofia Victoria<br>Apellidos =&nbsp;Mazparrote Camejo<br>Cédula =&nbsp;8-123-1235<br>Fecha de nacimiento =&nbsp;<br>Dirección = Urb. Versalles, casa 42F</p><p>Tipo de Sangre = O positivo</p></td><td>Passed</td></tr><tr><td>4</td><td><p>Selecciona la opción “Finalizar Registro”</p></td><td><p>Se muestra en pantalla el mensaje “El campo fecha de nacimiento no puede estar vacío”</p></td><td></td><td>Passed</td></tr></table><br><br><div class="Title3">Test TC:310-CP013 - Más de 100 caracteres: "Dirección"</div><div class="Description"></div><table class="HiddenTable"><tr><th>Execution Status:</th><td>Passed</td><th>Priority:</th><td></td></tr><tr><th>Type:</th><td>Functional</td><th>Status:</th><td>Draft</td></tr><tr><th>Author:</th><td>System Administrator</td><th>Creation Date:</th><td class="Date">15-Dec-2021 </td></tr><tr><th>Owner:</th><td></td><th>Last Execution:</th><td class="Date">17-Dec-2021 </td></tr><tr><th>Automation Engine:</th><td></td><th>Last Updated:</th><td class="Date">16-Dec-2021 </td></tr><tr><th>Component(s):</th><td colspan="3"></td></tr></table><table class="DataGrid"><tr><th>Step</th><th>Description</th><th>Expected Result</th><th>Sample Data</th><th>Last Status</th></tr><tr><td>1</td><td colspan="3">Call'Ingresar al sitio web'<i>withurl= 'localhost',</i></td><td>N/A</td></tr><tr><td>2</td><td><p>Selecciona la opción “paciente nuevo" que se despliega del botón “Programar cita médica”</p></td><td><p>Se muestran los campos “Nombres”, “Apellidos”, “Numero de cedula”, “Fecha de Nacimiento”, “Tipo de sangre” y “Direccion residencial”</p></td><td></td><td>Passed</td></tr><tr><td>3</td><td><p>Ingresar los datos en los campos</p></td><td><p>Los datos pueden ingresarse</p></td><td><p>Nombres =&nbsp;Sofia Victoria<br>Apellidos =&nbsp;Mazparrote Camejo<br>Cédula =&nbsp;8-123-1235<br>Fecha de nacimiento =&nbsp;1/5/2003<br>Dirección = ABC…ABC&nbsp;</p><p>Tipo de positivo = O positivo</p></td><td>Passed</td></tr><tr><td>4</td><td><p>Selecciona la opción “Finalizar Registro”</p></td><td><p>Se muestra en pantalla el mensaje “La dirección no puede tener más de 100 caracteres”</p></td><td></td><td>Passed</td></tr></table><br><br><div class="Title3">Test TC:311-CP014 - Campo vacío: "Dirección"</div><div class="Description"></div><table class="HiddenTable"><tr><th>Execution Status:</th><td>Passed</td><th>Priority:</th><td></td></tr><tr><th>Type:</th><td>Functional</td><th>Status:</th><td>Draft</td></tr><tr><th>Author:</th><td>System Administrator</td><th>Creation Date:</th><td class="Date">15-Dec-2021 </td></tr><tr><th>Owner:</th><td></td><th>Last Execution:</th><td class="Date">17-Dec-2021 </td></tr><tr><th>Automation Engine:</th><td></td><th>Last Updated:</th><td class="Date">16-Dec-2021 </td></tr><tr><th>Component(s):</th><td colspan="3"></td></tr></table><table class="DataGrid"><tr><th>Step</th><th>Description</th><th>Expected Result</th><th>Sample Data</th><th>Last Status</th></tr><tr><td>1</td><td colspan="3">Call'Ingresar al sitio web'<i>withurl= 'localhost',</i></td><td>N/A</td></tr><tr><td>2</td><td><p>Selecciona la opción “paciente nuevo" que se despliega del botón “Programar cita médica”</p></td><td><p>Se muestran los campos “Nombres”, “Apellidos”, “Numero de cedula”, “Fecha de Nacimiento”, “Tipo de sangre” y “Direccion residencial”</p></td><td></td><td>Passed</td></tr><tr><td>3</td><td><p>Ingresar los datos en los campos</p></td><td><p>Los datos pueden ingresarse</p></td><td><p>Nombres =&nbsp;Sofia Victoria<br>Apellidos =&nbsp;Mazparrote Camejo<br>Cédula =&nbsp;8-123-1235<br>Fecha de nacimiento =&nbsp;1/5/2003<br>Dirección =&nbsp;</p><p>Tipo de Sangre = O positivo&nbsp;</p></td><td>Passed</td></tr><tr><td>4</td><td><p>Selecciona la opción “Finalizar Registro”</p></td><td><p>Se muestra en pantalla el mensaje “El campo dirección no debe estar vacío”</p></td><td></td><td>Passed</td></tr></table><br><br><div class="Title2">Folder:Reprogramar cita médica</div><div class="Description"></div>
+    </div>
+    <div style="margin:0in 0in 0in 9in;">
+    <div style='mso-element:header' id='h1'>
+      <div style='mso-element:para-border-div;border:none;border-bottom:solid red 1.0pt; mso-border-bottom-alt:solid red .5pt;padding:0in 0in 1.0pt 0in'>
+        <p class='MsoNormal' style='border:none;mso-border-bottom-alt:solid red .5pt; padding:0in;mso-padding-alt:0in 0in 1.0pt 0in'>
+          <b style='mso-bidi-font-weight: normal'>
+            <span style='font-size:12.0pt;color:red'>
+              Test Case Detailed Report
+              <o:p></o:p>
+            </span>
+          </b>
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div style='mso-element:footer' id='f1'>
+      <div style='mso-element:para-border-div;border:none;border-top:solid red 1.0pt; mso-border-top-alt:solid red .5pt;padding:1.0pt 0in 0in 0in'>
+        <p class='MsoNormal' align='right' style='text-align:right;border:none;mso-border-top-alt: solid red .5pt;padding:0in;mso-padding-alt:1.0pt 0in 0in 0in'>
+          <span style='color:red'>Page</span>
+          <!--[if supportFields]><span style='color:red'><span
+style='mso-element:field-begin'></span>PAGE \* MERGEFORMAT<span
+style='mso-element:field-separator'></span></span><![endif]-->
+          <span style='color:red'>
+            <span style='mso-no-proof:yes'>1</span>
+          </span>
+          <!--[if supportFields]><span style='color:red;mso-no-proof:yes'><span style='mso-element:field-end'></span></span><![endif]-->
+          <span style='color:red'>
+            <o:p></o:p>
+          </span>
+        </p>
+      </div>
+      <p class='MsoNormal'>
+        <o:p>&nbsp;</o:p>
+      </p>
+    </div>
+    </div>
+  </body>
+</html>
