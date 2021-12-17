@@ -201,15 +201,18 @@ class PacienteController
 
             //Si todos los datos no tuvieron campos vacíos, se empieza la verificación de datos
             if(!empty($cedula) && !empty($fechanac) && !empty($policlinica) && !empty($especialidad)){
+
                 //Se verifica que la cédula se encuentre registrada en la BDD
                 $paciente= new PacienteModel();
                 $existe_paciente = $paciente->verificarPaciente($cedula);
-                //Se debe verificar que el paciente y la cédula correspondan en la BDD
-                if ($existe_paciente==true){
-                    $paciente= new PacienteModel();
-                    $coinciden = $paciente->verificarDatosPaciente(($cedula), ($fechanac));
 
-                        if ($coinciden){
+                //Se debe verificar que el paciente y la cédula correspondan en la BDD
+                if ($existe_paciente){
+
+                    $paciente= new PacienteModel();
+                    $coinciden = $paciente->verificarDatosPaciente($cedula, $fechanac);
+
+                        if ($coinciden==true) {
                         //Verificación del email
                         if(empty($_POST['email'])){
                             echo "El campo correo no puede estar vacío";
