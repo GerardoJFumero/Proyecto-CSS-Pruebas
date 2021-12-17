@@ -49,6 +49,8 @@ class PacienteModel
         $existe = $consulta->fetch_assoc();
         if($existe['contador'>0]){
             return true;
+        }else{
+            return false;
         }
     }
 

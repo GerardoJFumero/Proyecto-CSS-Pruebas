@@ -16,6 +16,8 @@ class PacienteModelTest extends TestCase
         ];
     }
 
+    
+
     /**
      * @dataProvider cedulasProveedor
      */
@@ -36,11 +38,28 @@ class PacienteModelTest extends TestCase
     /**
      * @dataProvider pacientesProveedor
      */
-    public function TestVerificarDatos($cedula, $fechanac, $esperado){
+    public function testVerificarDatos($cedula, $fechanac, $esperado){
         $paciente = new PacienteModel();
         $this->assertEquals($esperado, $paciente->verificarDatosPaciente($cedula,$fechanac));
     }
 
+
+    public function citasProveedor()
+    {
+        return [
+            'Caso 1' => ["8-123-1235",10,true], //La información de la cita es correcta y se encuentra en la BDD
+            'Caso 2' => ["8-123-1235",5,false], //La cita no corresponde al paciente
+            'Caso 3' => ["8-123-1235",100,false] //La cita no existe
+        ];
+    }
+
+    /**
+     * @dataProvider citasProveedor
+     */
+    public function testVerificarDatosCita($cedula, $numero_cita, $esperado){
+        $paciente = new PacienteModel();
+        $this->assertEquals($esperado, $paciente->verificarDatosCita($cedula,$numero_cita));
+    }
 
 
 }

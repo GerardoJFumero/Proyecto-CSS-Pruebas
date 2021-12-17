@@ -208,46 +208,47 @@ class PacienteController
                 if ($existe_paciente==true){
                     $paciente= new PacienteModel();
                     $coinciden = $paciente->verificarDatosPaciente(($cedula), ($fechanac));
-                            if ($coinciden=true){
-                            //Verificación del email
-                            if(empty($_POST['email'])){
-                                echo "El campo correo no puede estar vacío";
 
-                            } else{
-                                $val_email = $this->validarEmail($_POST['email']);
-                                if($val_email==true){
-                                    $email=$_POST['email'];
-                                }   else{
-                                        echo "El formato del correo no es válido";
-                                    }
-                            }
+                        if ($coinciden){
+                        //Verificación del email
+                        if(empty($_POST['email'])){
+                            echo "El campo correo no puede estar vacío";
 
-                            //Verificación del telefono
-                            if(empty($_POST['telefono'])){
-                                echo "El campo número de celular no puede estar vacío";
-                            } else {
-                                $longitud = $this->cantidadCaracter($_POST['telefono']);
-                                    switch($longitud){
-                                        case ($longitud>=7&&$longitud<9):
-                                            $telefono=$_POST['telefono'];
-                                            break;
-                                        default:
-                                            echo "El campo número debe tener de 6 a 9 caracteres numéricos";
-                                    }
-                            }
-                            if(!empty($telefono) && !empty($email)){
-                                $cita_agendada = $paciente -> asignarCita($cedula, $email, $telefono, $policlinica, $especialidad);
-                                    if($cita_agendada){
-                                        $num_cita = $this->db->query("SELECT numero_cita FROM citas WHERE numero_cita = (SELECT MAX(numero_cita) FROM citas)");
-                                        $num= mysqli_fetch_array($num_cita);
-                                        $fecha = $this->db->query("SELECT fecha_cita FROM citas WHERE numero_cita = (SELECT MAX(numero_cita) FROM citas)");
-                                        $fec= mysqli_fetch_array($fecha);
-                                        require_once('Views/Paciente/cita-nueva-registrada.php');
-                                    }
-                            }
-                            } else{
-                                echo "La fecha de nacimiento no corresponde al paciente";
-                            }
+                        } else{
+                            $val_email = $this->validarEmail($_POST['email']);
+                            if($val_email==true){
+                                $email=$_POST['email'];
+                            }   else{
+                                    echo "El formato del correo no es válido";
+                                }
+                        }
+
+                        //Verificación del telefono
+                        if(empty($_POST['telefono'])){
+                            echo "El campo número de celular no puede estar vacío";
+                        } else {
+                            $longitud = $this->cantidadCaracter($_POST['telefono']);
+                                switch($longitud){
+                                    case ($longitud>=7&&$longitud<9):
+                                        $telefono=$_POST['telefono'];
+                                        break;
+                                    default:
+                                        echo "El campo número debe tener de 6 a 9 caracteres numéricos";
+                                }
+                        }
+                        if(!empty($telefono) && !empty($email)){
+                            $cita_agendada = $paciente -> asignarCita($cedula, $email, $telefono, $policlinica, $especialidad);
+                                if($cita_agendada){
+                                    $num_cita = $this->db->query("SELECT numero_cita FROM citas WHERE numero_cita = (SELECT MAX(numero_cita) FROM citas)");
+                                    $num= mysqli_fetch_array($num_cita);
+                                    $fecha = $this->db->query("SELECT fecha_cita FROM citas WHERE numero_cita = (SELECT MAX(numero_cita) FROM citas)");
+                                    $fec= mysqli_fetch_array($fecha);
+                                    require_once('Views/Paciente/cita-nueva-registrada.php');
+                                }
+                        }
+                        } else{
+                            echo "La fecha de nacimiento no corresponde al paciente";
+                        }
                 } else{
                     echo "La cedula no se encuentra registrada";
                 }
