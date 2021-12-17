@@ -4387,7 +4387,7 @@
         ["xpath=//section", "xpath:position"],
         ["xpath=//section[contains(.,'La cédula no corresponde a ningún paciente')]", "xpath:innerText"]
       ],
-      "value": "La cédula no corresponde a ningún paciente"
+      "value": "La cedula no se encuentra registrada"
     }]
   }, {
     "id": "c2cef144-a542-45de-8d76-5dd6289a9248",
@@ -6886,9 +6886,13 @@
       "id": "06cb99ce-9e54-4ab9-8db4-e9efb6d15803",
       "comment": "",
       "command": "assertText",
-      "target": "css=section",
-      "targets": [],
-      "value": "El campo fecha de nacimiento no puede estar vacío"
+      "target": "css=.img-thumbnail",
+      "targets": [
+        ["css=.img-thumbnail", "css:finder"],
+        ["xpath=//img[contains(@src,'https://w3.css.gob.pa/wp-content/uploads/2020/09/cropped-cajalogo.png')]", "xpath:img"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": ""
     }]
   }, {
     "id": "ebbeea6e-f649-403a-8284-a15fcdcdc3cf",
@@ -7219,7 +7223,7 @@
     }]
   }, {
     "id": "faba89e1-0dfa-443a-b1e5-e2f322f948ae",
-    "name": "CC008 - Captcha incorrecto",
+    "name": "CC009 - Captcha vacío",
     "commands": [{
       "id": "f1a54ac6-47ec-4e4a-bfbc-fdd47ce8c274",
       "comment": "",
@@ -7377,7 +7381,7 @@
     }]
   }, {
     "id": "33f7bd12-2ff0-4de6-8e69-9ffedf0f7f47",
-    "name": "CC009 - Captcha vacío",
+    "name": "CC008 - Captcha incorrecto",
     "commands": [{
       "id": "7ddda1af-b7ee-4635-b9b6-92f13ef5e736",
       "comment": "",
@@ -7573,7 +7577,7 @@
     "persistSession": false,
     "parallel": false,
     "timeout": 300,
-    "tests": []
+    "tests": ["17aa4ad2-27b0-4c8f-b0e4-2adae0fbbe1d", "14fbe90a-8277-4aa7-a976-f8068e016e5b", "25f1df51-c958-4de6-b8d6-107a2766e2f4", "61450006-e639-4dec-9f55-d34855e25b48", "20ac5c33-6fff-4bb5-b399-e89b2544ad85", "ebbeea6e-f649-403a-8284-a15fcdcdc3cf", "fd5ff348-c056-4aad-a726-d1e5c1782bed", "faba89e1-0dfa-443a-b1e5-e2f322f948ae", "33f7bd12-2ff0-4de6-8e69-9ffedf0f7f47"]
   }],
   "urls": ["http://localhost/"],
   "plugins": []
