@@ -1,6 +1,7 @@
 <?php
 
 use PharIo\Manifest\Requirement;
+use PhpParser\Node\Stmt\Return_;
 
 class PacienteModel
 {
@@ -46,14 +47,8 @@ class PacienteModel
         $consulta = $this->db->query("SELECT count(*) as contador from paciente where cedula = '" . $cedula . "' and fechanac = '" . $fechanac . "';"  );
         //Puntero que permiten verificar la existencia de información en la BDD
         $existe = $consulta->fetch_assoc();
-        switch ($existe) {
-
-            case ($existe['contador'] > 0):
+        if($existe['contador'>0]){
             return true;
-            break;
-
-            case ($existe['contador'] = 0):
-            return false;
         }
     }
 
@@ -135,7 +130,7 @@ class PacienteModel
     public function info($cedula){
             $this->pacientes = $this->obtenerPaciente($cedula);
             return $this->pacientes;
-        }
+    }
 
     //Permite obtener la información de paciente desde la tabla paciente
     public function obtenerPaciente($cedula)

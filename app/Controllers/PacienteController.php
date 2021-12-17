@@ -208,7 +208,7 @@ class PacienteController
                 if ($existe_paciente==true){
                     $paciente= new PacienteModel();
                     $coinciden = $paciente->verificarDatosPaciente(($cedula), ($fechanac));
-                            if ($coinciden==true){
+                            if ($coinciden=true){
                             //Verificación del email
                             if(empty($_POST['email'])){
                                 echo "El campo correo no puede estar vacío";
